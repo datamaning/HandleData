@@ -1,2 +1,2 @@
 # HandleData
-about csv,txt,sql etc
+Use python handle data related to csv,txt,sql etc
