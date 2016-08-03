@@ -1,0 +1,6 @@
+F:\ASU\Probability\EfficUdarov.cpp
+F:\ASU\Probability\Probability.cpp
+F:\ASU\Probability\Resource.h
+F:\ASU\Probability\StdAfx.cpp
+F:\ASU\Probability\StdAfx.h
+F:\ASU\Probability\vs_func.cpp

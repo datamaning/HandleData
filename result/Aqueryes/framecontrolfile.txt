@@ -1,0 +1,9 @@
+F:\ASU\FrameControl\Convert.cpp
+F:\ASU\FrameControl\FrameControl.cpp
+F:\ASU\FrameControl\FrameCtrl.cpp
+F:\ASU\FrameControl\ItemData.cpp
+F:\ASU\FrameControl\resource.h
+F:\ASU\FrameControl\StdAfx.cpp
+F:\ASU\FrameControl\StdAfx.h
+F:\ASU\FrameControl\ViewCtrl.cpp
+F:\ASU\FrameControl\ViewCtrl.h

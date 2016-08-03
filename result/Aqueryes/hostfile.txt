@@ -1,0 +1,6 @@
+F:\ASU\HOST\Host.cpp
+F:\ASU\HOST\Host.h
+F:\ASU\HOST\HostDlg.cpp
+F:\ASU\HOST\HostDlg.h
+F:\ASU\HOST\StdAfx.cpp
+F:\ASU\HOST\StdAfx.h

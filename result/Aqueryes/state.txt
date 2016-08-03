@@ -1,0 +1,3 @@
+使用:select 1 no, b.name, b.description, b.error from v$bgprocess b, v$process p\
+文件名:F:\ASU\State\StateView.cpp       行号:121
+

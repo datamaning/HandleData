@@ -1,0 +1,15 @@
+表名:path2_rn          出现次数:1
+表名:norm_got,          出现次数:1
+表名:har_atm          出现次数:3
+表名:har_bch          出现次数:2
+表名:har_spu          出现次数:5
+表名:har_rn          出现次数:1
+表名:skor_zv          出现次数:1
+表名:classif          出现次数:1
+表名:chislo_maha          出现次数:1
+表名:aerodin_koeff          出现次数:1
+表名:har_rt          出现次数:1
+表名:path1_rn          出现次数:1
+表名:peresch          出现次数:1
+表名:har_tech          出现次数:1
+表名:norm_got          出现次数:2

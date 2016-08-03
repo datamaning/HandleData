@@ -1,0 +1,18 @@
+使用:(select sum(bytes) b from v$datafile union \
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:576
+
+使用:select sum(1500000) b from v$controlfile v3 union \
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:577
+
+使用:select sum(bytes) b from v$log) s");
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:578
+
+使用:(select sum(bytes) b from v$datafile union \
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:581
+
+使用:select sum(bytes) b from v$log) s");
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:582
+
+使用:strsql = "select name, value from v$parameter \
+文件名:F:\ASU\Archiver\MainFrm.cpp       行号:753
+

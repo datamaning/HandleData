@@ -1,0 +1,11 @@
+表名:classif          出现次数:3
+表名:vw$vydel_bp          出现次数:1
+表名:vw$ob_upr          出现次数:3
+表名:vw$user_acc          出现次数:1
+表名:vw$vzaim_ob          出现次数:1
+表名:vw$my_ob_upr          出现次数:2
+表名:gps_data          出现次数:1
+表名:vw$ogn_zad          出现次数:1
+表名:asu_current_user          出现次数:2
+表名:id_zad          出现次数:1
+表名:vw$user_ob_upr          出现次数:1

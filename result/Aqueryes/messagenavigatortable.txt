@@ -1,0 +1,5 @@
+表名:asu_all_obj          出现次数:2
+表名:txn$_data          出现次数:2
+表名:txn$_out          出现次数:6
+表名:txn$_out_dest          出现次数:7
+表名:txn$_in          出现次数:3

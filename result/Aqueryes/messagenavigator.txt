@@ -1,0 +1,159 @@
+使用:from txn$_out o, txn$_out_dest d, asu_all_obj a \
+文件名:F:\ASU\MessageNavigator\BigDestDialog.cpp       行号:126
+
+使用:error_code, error_msg from txn$_out_dest where txn#='") + txn->txn +
+文件名:F:\ASU\MessageNavigator\BigDestDialog.cpp       行号:265
+
+使用:cstring sql = _t("update txn$_out_dest set error_time = null, error_code = null, \
+文件名:F:\ASU\MessageNavigator\BigDestDialog.cpp       行号:308
+
+使用:cstring sql = _t("delete txn$_out_dest where txn# = '") + ptxn->txn +
+文件名:F:\ASU\MessageNavigator\BigDestDialog.cpp       行号:368
+
+使用:select naim_obj into :argvalue from asu_all_obj where kodob = tmp; \
+文件名:F:\ASU\MessageNavigator\DataView.cpp       行号:739
+
+使用:from asu_all_obj a, txn$_in i, txn$_in_dest d \
+文件名:F:\ASU\MessageNavigator\DestDialog.cpp       行号:58
+
+使用:from txn$_in t, asu_all_obj a \
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:153
+
+使用:to_char(max(pack_time), 'yyyy/mm/dd hh24:mi:ss') from txn$_in t where 1=1 ");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:158
+
+使用:error_code, error_msg from txn$_in where txn#='") + ptxn->txn +
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:381
+
+使用:sql = _t("select distinct d.txn#, d.kodob from txn$_data d, \
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:484
+
+使用:(select txn#, kodob from txn$_in where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:485
+
+使用:(d.txn#, d.kodob) not in (select txn#, kodob from txn$_out)");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:531
+
+使用:sql = _t("select distinct d.txn#, d.kodob from txn$_data d, \
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:535
+
+使用:(select txn#, kodob from txn$_in");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:536
+
+使用:(d.txn#, d.kodob) not in (select txn#, kodob from txn$_out)");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:540
+
+使用:cstring sql("delete from txn$_data where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:578
+
+使用:sql = _t("select txn#, kodob from txn$_in where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:601
+
+使用:cstring sql("delete from txn$_in where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:682
+
+使用:sql = _t("delete from txn$_in_dest where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:704
+
+使用:cstring sql = _t("update txn$_in set error_time = null, error_code = null, \
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:740
+
+使用:txn$_in \
+文件名:F:\ASU\MessageNavigator\MessageViewIn.cpp       行号:1020
+
+使用:from txn$_out t, asu_all_obj a");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:173
+
+使用:from txn$_out o");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:178
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:182
+
+使用:tsql += _t(", (select txn#, kodob_orig from txn$_out_dest where 1=1 and error_code is ") +
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:184
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:193
+
+使用:tsql += _t(", (select txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:194
+
+使用:sql = _t("select distinct d.txn#, d.kodob from txn$_data d, \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:481
+
+使用:(select txn#, kodob from txn$_out where \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:482
+
+使用:(d.txn#, d.kodob) not in (select txn#, kodob from txn$_in)");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:485
+
+使用:sql = _t("select distinct d.txn#, d.kodob from txn$_data d, \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:491
+
+使用:(select o1.txn#, o1.kodob from txn$_out o1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:492
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:496
+
+使用:if( ball ) sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:504
+
+使用:(d.txn#, d.kodob) not in (select txn#, kodob from txn$_in)");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:538
+
+使用:sql = _t("select distinct d.txn#, d.kodob from txn$_data d, \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:543
+
+使用:(select txn#, kodob from txn$_out");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:544
+
+使用:(d.txn#, d.kodob) not in (select txn#, kodob from txn$_in)");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:549
+
+使用:cstring sql("delete from txn$_data where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:587
+
+使用:sql = _t("select txn#, kodob from txn$_out where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:610
+
+使用:sql = _t("select txn#, kodob from txn$_out where \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:617
+
+使用:sql = _t("select o.txn#, o.kodob from txn$_out o");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:623
+
+使用:sql += _t(", (select txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:626
+
+使用:if( ball ) sql += _t(", (select txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:633
+
+使用:cstring sql("delete from txn$_out where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:701
+
+使用:sql = _t("delete from txn$_out_dest where txn# = '");
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:724
+
+使用:cstring sql = _t("update txn$_out_dest set error_time = null, error_code = null, \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:784
+
+使用:txn$_out_dest \
+文件名:F:\ASU\MessageNavigator\MessageViewOut.cpp       行号:886
+
+使用:from txn$_in t, asu_all_obj a \
+文件名:F:\ASU\MessageNavigator\StdAfx.cpp       行号:130
+
+使用:from txn$_out t, asu_all_obj a");
+文件名:F:\ASU\MessageNavigator\StdAfx.cpp       行号:152
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\MessageNavigator\StdAfx.cpp       行号:158
+
+使用:if( ball ) sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\MessageNavigator\StdAfx.cpp       行号:165
+
+使用:select naim_obj into :argvalue from asu_all_obj where kodob = tmp; \
+文件名:F:\ASU\MessageNavigator\StdAfx.cpp       行号:718
+

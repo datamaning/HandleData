@@ -1,0 +1,27 @@
+使用://write data in table gps_data
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:175
+
+使用:othrow2(hthisapp->m_database, hthisapp->m_database.executesql("delete gps_data"));
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:253
+
+使用://cstring strselect = "select * from gps_data";
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:254
+
+使用:insert into gps_data (ctime, koord) \
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:307
+
+使用:othrow2(hthisapp->m_database, hthisapp->m_database.executesql("delete gps_data"));
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:946
+
+使用:insert into gps_data (ctime, koord) \
+文件名:F:\ASU\MonGPSCr\MainFrm.cpp       行号:969
+
+使用://read db data from table gps_data
+文件名:F:\ASU\MonGPSCr\MyPropertyPage1.cpp       行号:164
+
+使用:from gps_data";
+文件名:F:\ASU\MonGPSCr\MyPropertyPage1.cpp       行号:172
+
+使用:from gps_data", cstime2, cstime1);
+文件名:F:\ASU\MonGPSCr\MyPropertyPage1.cpp       行号:181
+

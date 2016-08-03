@@ -1,0 +1,12 @@
+表名:vw$uch_dor          出现次数:1
+表名:classif          出现次数:4
+表名:vw$pol_ob          出现次数:1
+表名:napr_deistv          出现次数:1
+表名:vw$gbd_index          出现次数:7
+表名:vw$user_acc          出现次数:1
+表名:vw$ob_mestn          出现次数:4
+表名:vw$gbd_zn          出现次数:1
+表名:vw$rakety          出现次数:1
+表名:gps_data          出现次数:1
+表名:vw$points          出现次数:3
+表名:vw$ob_upr          出现次数:2

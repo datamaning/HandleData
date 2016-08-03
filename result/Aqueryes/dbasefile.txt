@@ -1,0 +1,14 @@
+F:\ASU\DBase\ClassifTree.cpp
+F:\ASU\DBase\ColorTreeCtrl.cpp
+F:\ASU\DBase\DBase.cpp
+F:\ASU\DBase\DBaseFun.cpp
+F:\ASU\DBase\ObjectsListCtrl.cpp
+F:\ASU\DBase\ObjectsTreeCtrl.cpp
+F:\ASU\DBase\ObUprTreeCtrl.cpp
+F:\ASU\DBase\OOException.cpp
+F:\ASU\DBase\resource.h
+F:\ASU\DBase\StdAfx.cpp
+F:\ASU\DBase\StdAfx.h
+F:\ASU\DBase\TreeCtrlEx.cpp
+F:\ASU\DBase\ValuesList.cpp
+F:\ASU\DBase\ValuesTree.cpp

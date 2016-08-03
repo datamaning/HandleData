@@ -1,0 +1,87 @@
+使用:cswhere.format("id in (select naim_tech# from har_tech)");
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1237
+
+使用:cswhere.format("id in (select naim_obsl# from har_to_btv,vw$tto_btv \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1241
+
+使用:cswhere.format("id in (select naim_rem# from har_plan_rem,vw$tto_btv \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1246
+
+使用:union select naim_rem# from har_neplan_rem,vw$tto_btv \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1248
+
+使用:cswhere.format("id in (select naim_spos# from har_neplan_rem,vw$tto_btv \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1254
+
+使用:"id in (select har_rk.naim_spu# from har_rk \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1263
+
+使用:where har_rk.naim_rk# in \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1264
+
+使用:and har_rk.naim_spu#=id)",sview1,sview2,lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1267
+
+使用:"id in (select spu_rt.naim_rt# from har_rt,spu_rt,har_rk \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1273
+
+使用:or har_rk.naim_rk# in (select naim_rk# from %s where idos in \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1275
+
+使用:and spu_rt.naim_spu#=har_rk.naim_spu# and spu_rt.naim_rt#=id)",sview2,lvalue,sview1,sview2,lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1277
+
+使用:"id in (select har_rt.naim_bch# from har_rt,spu_rt,har_rk \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1283
+
+使用:or har_rk.naim_rk# in (select naim_rk# from %s where idos in \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1285
+
+使用:and spu_rt.naim_spu#=har_rk.naim_spu#  and har_rt.naim_rt#=spu_rt.naim_rt#  \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1287
+
+使用:and har_rt.naim_bch#=id)",sview2,lvalue,sview1,sview2,lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1288
+
+使用:"id in (select har_rt.naim_rn# from har_rt,spu_rt,har_rk \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1294
+
+使用:or har_rk.naim_rk# in (select naim_rk# from %s where idos in \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1296
+
+使用:and spu_rt.naim_spu#=har_rk.naim_spu#  and har_rt.naim_rt#=spu_rt.naim_rt#  \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1298
+
+使用:and har_rt.naim_rn#=id)",sview2,lvalue,sview1,sview2,lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1299
+
+使用:"id in (select har_rk.naim_rk# from har_rk where har_rk.naim_rk#=id)";
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1305
+
+使用:"id in (select naim_lit# from diapazon where naim_bch#=%ld)",lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1311
+
+使用:"id in (select har_rt.naim_rt# from har_rt \
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1317
+
+使用:where har_rt.naim_bch#=%ld and har_rt.naim_rt#=id)",lvalue);
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1318
+
+使用:"idos in (select idos from vw$ob_upr_zad where idz in\
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1324
+
+使用:(select idz from vw$derevo_zad start with idz =\
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1325
+
+使用:(select idz from vw$mas_ru where id_mru=%ld)\
+文件名:F:\ASU\Custom\ControlDlg.cpp       行号:1326
+
+使用:from uskor_sp \
+文件名:F:\ASU\Custom\FreeFallAccel.cpp       行号:811
+
+使用:from uskor_sp \
+文件名:F:\ASU\Custom\FreeFallAccel.cpp       行号:902
+
+使用:( select * from uskor_sp \
+文件名:F:\ASU\Custom\FreeFallAccel.cpp       行号:904
+

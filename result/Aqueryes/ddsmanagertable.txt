@@ -1,0 +1,7 @@
+表名:kodob_links          出现次数:1
+表名:asu_all_obj          出现次数:6
+表名:vw$vzaim_ob          出现次数:3
+表名:asu$link          出现次数:1
+表名:txn$_out_dest          出现次数:1
+表名:txn$_data          出现次数:3
+表名:asu$direction          出现次数:1

@@ -1,0 +1,4 @@
+表名:v$controlfile          出现次数:1
+表名:v$parameter          出现次数:1
+表名:v$log          出现次数:1
+表名:v$datafile          出现次数:1

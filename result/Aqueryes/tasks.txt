@@ -1,0 +1,672 @@
+使用:// ntypeceli - classifier code of type of target
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:47
+
+使用:// npriznpodavl - classifier code of sign of suppression of enemy antimissile defense
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:48
+
+使用:// nstepporaj - classifier code of required degree of hitting
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:49
+
+使用:idos in (select idos from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:460
+
+使用:where idos = (select idos from vw$ob_upr where is_my=1) \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:516
+
+使用:and naim_pol# in (select id from classif start with id=210100 connect by prior id=master_id)";
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:517
+
+使用:where idos in (select idos from vw$ob_upr where  naim_ob#=15023 \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:561
+
+使用:where idos in (select idos from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:601
+
+使用:norm_bch \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:661
+
+使用:norm_bch.naim_celi#=%d \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:663
+
+使用:and norm_bch.naim_ukr#=%d \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:664
+
+使用:and norm_bch.naim_zrk#=%d \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:665
+
+使用:and norm_bch.naim_pr#=%d \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:666
+
+使用:and norm_bch.naim_sp#=%d",m_ntypeceli,m_lstepukr,m_lzrktype,m_npriznpodavl,m_nstepporaj);
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:667
+
+使用:norm_bch \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:673
+
+使用:norm_bch.naim_celi#=%d \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:675
+
+使用:and norm_bch.naim_ukr#=81101 \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:676
+
+使用:and norm_bch.naim_zrk#=82004 \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:677
+
+使用:and norm_bch.naim_pr#=82002 \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:678
+
+使用:and norm_bch.naim_sp#=%d",m_ntypeceli,m_nstepporaj);
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:679
+
+使用:vw$vydel_bp,\
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:691
+
+使用:(select idos from vw$ob_upr where is_my=1) my_ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:692
+
+使用:vw$vydel_bp.idos(+)=my_ob_upr.idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:694
+
+使用:vw$rakety,\
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:705
+
+使用:where vw$rakety.idos in (	select idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:707
+
+使用:from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:708
+
+使用:and vw$step_bgot.idos(+)=vw$rakety.idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:714
+
+使用:from classif \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:716
+
+使用:and not exists (select naim_rt# from vw$vydel_bp where idos = (select idos from vw$ob_upr where is_my=1)) \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:719
+
+使用:vw$rakety \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:726
+
+使用:where vw$rakety.idos in (	select idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:727
+
+使用:from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:728
+
+使用:and not exists (select naim_rt# from vw$vydel_bp where idos = (select idos from vw$ob_upr where is_my=1)) \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:733
+
+使用:vw$rakety,\
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:743
+
+使用:where vw$rakety.idos in (	select idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:745
+
+使用:from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:746
+
+使用:from vw$zakr_tchk \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:751
+
+使用:and vw$step_bgot.idos(+)=vw$rakety.idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:755
+
+使用:from classif \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:757
+
+使用:vw$rakety \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:767
+
+使用:where vw$rakety.idos in (	select idos \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:768
+
+使用:from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:769
+
+使用:from vw$ob_upr \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:778
+
+使用:from classif \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:785
+
+使用:connect by prior vw$ob_upr.idos=vw$ob_upr.idos_org";
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:789
+
+使用:get_classif(har_bch.naim_bch#) naim_bch,\
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:801
+
+使用:(select id from classif start with id in (812100,811100) connect by prior id=master_id ) vw$vysoko_tochn,\
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:821
+
+使用:(select sum(kol_bch) kol_bch,naim_bch# from vw$rash_rt where id_celi<>%d or nomer_puska<>%d group by naim_bch#) vw$minus, \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:822
+
+使用:and har_rt.naim_bch# in (select naim_bch# from norm_bch where naim_celi#=%d) \
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:832
+
+使用:schast.format("select min_chast,max_chast from diapazon where naim_bch#=%d",m_stahar_bch_rock[i].m_lkod_bch);
+文件名:F:\ASU\Tasks\CalcEffic.cpp       行号:890
+
+使用:long				m_nnaim_rk;						// classifier code used in task of missile complex
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:23
+
+使用:long				m_lstepukr;						// classifier code of name of coverture of target
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:30
+
+使用:long				m_lzrktype;						// classifier code of type of covering adms
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:31
+
+使用:long				m_ntypeceli;					// classifier code of type of target
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:32
+
+使用:long				m_npriznpodavl;				// classifier code of sign of suppression of enemy antimissile defense
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:33
+
+使用:long				m_nstepporaj;					// classifier code of required degree of hitting
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:34
+
+使用:// ntypeceli - classifier code of type of target
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:47
+
+使用:// npriznpodavl - classifier code of sign of suppression of enemy antimissile defense
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:48
+
+使用:// nstepporaj - classifier code of required degree of hitting
+文件名:F:\ASU\Tasks\CalcEffic.h       行号:49
+
+使用:m_koltype.init( classif_box, ::getdatabase(), "id=340000", m_l_idos, m_str_tk, false, "id not in(340001,340002)");
+文件名:F:\ASU\Tasks\DlgAddMilitarylUnit.cpp       行号:102
+
+使用:from kolonny col, vw$ob_upr ob \
+文件名:F:\ASU\Tasks\DlgAddMilitarylUnit.cpp       行号:165
+
+使用:m_ctrlpunkt.init( classif_box, ::getdatabase(), "id=52200", m_lpunkt, m_strpunkt, false, m_swhere);
+文件名:F:\ASU\Tasks\DlgBaseKoord.cpp       行号:81
+
+使用:vw$tochki.koord koord_tpric,\
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:448
+
+使用:vw$tochki,\
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:451
+
+使用:vw$vzryv2.id_celi(+)=vw$tochki.id_celi \
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:454
+
+使用:and vw$vzryv2.nomer_puska(+)=vw$tochki.nomer_puska \
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:455
+
+使用:and vw$vzryv2.nomer(+)=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:456
+
+使用:and	vw$tochki.id_celi=%d and vw$tochki.nomer_puska=%d and vw$tochki.nomer=%d",
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:457
+
+使用:sselect.format("select nom_peleng,idos,koord_peleng,azimut from vw$peleng where id_celi=%d and nomer_puska=%d and nomer=%d order by nom_peleng",
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:492
+
+使用:for r in (select nomer,idos from vw$peleng where id_celi=%d and nomer_puska=%d and nomer=%d) \
+文件名:F:\ASU\Tasks\ErrorFallInstrumVw.cpp       行号:871
+
+使用:// nkod_rock - classifier code of missile
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:110
+
+使用:decode(vw$ob_upr.naim_ob#,15023,koords_pol,null) koords_start,\
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1171
+
+使用:vw$tochki.koord koord_tpric,\
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1182
+
+使用:classif,\
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1191
+
+使用:vw$ob_upr,\
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1193
+
+使用:vw$tochki,\
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1194
+
+使用:and classif.id=har_rt.naim_rt# \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1199
+
+使用:and vw$ob_upr.idos=%d \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1200
+
+使用:and vw$pol_ob.idos(+)=vw$ob_upr.idos \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1201
+
+使用:and vw$vzryv1.id_celi(+)=vw$tochki.id_celi \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1202
+
+使用:and vw$vzryv1.nomer_puska(+)=vw$tochki.nomer_puska \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1203
+
+使用:and vw$vzryv1.nomer(+)=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1204
+
+使用:and	vw$tochki.id_celi=%d and vw$tochki.nomer_puska=%d and vw$tochki.nomer=%d",
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.cpp       行号:1205
+
+使用:long		m_ntype;	// classifier code of missile
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.h       行号:18
+
+使用:// ntype -  classifier code of missile
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.h       行号:41
+
+使用:long		m_nkod_rock;		// classifier code of missile
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.h       行号:138
+
+使用:// nkod_rock - classifier code of missile
+文件名:F:\ASU\Tasks\ErrorFallRadioVw.h       行号:149
+
+使用:"from vw$ob_upr a,vw$ob_upr b,vw$ob_upr c "
+文件名:F:\ASU\Tasks\OtvetIspoln.cpp       行号:127
+
+使用:"for r in (select idos_isp from vw$isp_ognz where id_celi="+numbertostring(m_laid_celi[i])+
+文件名:F:\ASU\Tasks\OtvetIspoln.cpp       行号:350
+
+使用:long		ntyperock;		// classifier code of missile type
+文件名:F:\ASU\Tasks\Proverka.h       行号:22
+
+使用:"for r in (select naim_bch# from vw$rash_rt where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\Rashod.cpp       行号:268
+
+使用:"for r in (select idos_isp from vw$isp_ognz where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\Rashod.cpp       行号:273
+
+使用:"for r in (select naim_bch# from vw$rash_rt where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\RashodCalcVw.cpp       行号:513
+
+使用:"for r in (select idos_isp from vw$isp_ognz where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\RashodCalcVw.cpp       行号:518
+
+使用:"for r in (select nomer from vw$tochki where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\RashodCalcVw.cpp       行号:524
+
+使用:long				m_lkod_bch;						// classifier code of warhead
+文件名:F:\ASU\Tasks\RashodCalcVw.h       行号:78
+
+使用:long				m_lkod_rock;					// classifier code of missile
+文件名:F:\ASU\Tasks\RashodCalcVw.h       行号:80
+
+使用:// lkod_bch - classifier code of warhead
+文件名:F:\ASU\Tasks\RashodCalcVw.h       行号:105
+
+使用:// lkod_rock - classifier code of missile
+文件名:F:\ASU\Tasks\RashodCalcVw.h       行号:107
+
+使用:from  vw$bch_ob_zad,vw$ob_upr upr1,vw$ob_upr upr2,\
+文件名:F:\ASU\Tasks\Raspr_Res.cpp       行号:180
+
+使用:(select idz,full_naim_zad from vw$derevo_zad dz\
+文件名:F:\ASU\Tasks\Raspr_Res.cpp       行号:181
+
+使用:where not exists (select idz from vw$derevo_zad dz1\
+文件名:F:\ASU\Tasks\Raspr_Res.cpp       行号:182
+
+使用:(select idz from vw$derevo_zad dz\
+文件名:F:\ASU\Tasks\Raspr_Res.cpp       行号:312
+
+使用:where not exists (select idz from vw$derevo_zad dz1 where dz1.master_idz=dz.idz)\
+文件名:F:\ASU\Tasks\Raspr_Res.cpp       行号:313
+
+使用:"for r in (select nomer from vw$tochki where id_celi=:id_celi "
+文件名:F:\ASU\Tasks\Raznos.cpp       行号:294
+
+使用:long		nkod_bch;			// classifier code of warhead
+文件名:F:\ASU\Tasks\Raznos.h       行号:21
+
+使用:// nvkod_bch - classifier code of warhead
+文件名:F:\ASU\Tasks\Raznos.h       行号:30
+
+使用:#define idc_classif_tree               18136
+文件名:F:\ASU\Tasks\resource.h       行号:167
+
+使用:#define ids_mas_no_norm_bch            18356
+文件名:F:\ASU\Tasks\resource.h       行号:387
+
+使用://	m_ctrlbasemarsh.init( classif_box, ::getdatabase(), "id=340000", m_lbasemarsh, m_strbasemarsh, false, "id not in (340001, 340002)");
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:172
+
+使用:from vw$grafik g, vw$points p \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:825
+
+使用:strtemp += _t("(select tt.idos from vw$ob_upr tt start with tt.idos = ");
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1514
+
+使用:strtemp += _t("(select tt.idos from vw$ob_upr tt  where tt.idos = ");
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1522
+
+使用:from vw$grafik g1, vw$marsh m \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1955
+
+使用:(exists (select null from vw$grafik g2 \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1957
+
+使用:or not exists (select null from vw$kolon k \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1961
+
+使用:strsql.format("select * from vw$kolon \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:1980
+
+使用:from vw$grafik g1, vw$marsh m \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:2060
+
+使用:not exists (select null from vw$grafik g2 \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:2062
+
+使用:cstring strsql = _t("select id_marsh from vw$marsh");
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:2632
+
+使用:from classif \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:2741
+
+使用:strsql.format("select idos from vw$ob_upr \
+文件名:F:\ASU\Tasks\RoutePlanPage3.cpp       行号:3124
+
+使用:strsql = "select dist_kol from vw$ob_upr, norm_manevr \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:408
+
+使用:where vw$ob_upr.idos = :tk_op \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:409
+
+使用:and norm_manevr.naim_form# = vw$ob_upr.naim_ob# \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:410
+
+使用:and norm_manevr.naim_rv# = vw$ob_upr.naim_rv#";
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:411
+
+使用:cstring strsql = " select vr_razv from kolonny, vw$ob_upr \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:447
+
+使用:where vw$ob_upr.idos = :id_vf_op \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:448
+
+使用:and kolonny.naim_rv# = vw$ob_upr.naim_rv#\
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:449
+
+使用:and kolonny.naim_form# = vw$ob_upr.naim_ob# \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:450
+
+使用:strsql = "select nm.skor skor from norm_manevr nm, vw$ob_upr ob \
+文件名:F:\ASU\Tasks\RoutePlanPage4.cpp       行号:796
+
+使用:cstring ssql(" select visota,plotn from har_atm order by visota");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:48
+
+使用:" select visota,skor_zv from har_atm order by visota");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:325
+
+使用:" select chislo_maha,proizv_koeff from chislo_maha order by chislo_maha");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:378
+
+使用:cvalues v("chislo_maha,proizv_koeff");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:379
+
+使用:achislo_maha.add(cchislo_maha((double)v["chislo_maha"],(double)v["proizv_koeff"]));
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:385
+
+使用://define cx from aerodin_koeff - profile drag factor
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:421
+
+使用:" select vysota,chislo_maha,koeff from aerodin_koeff order by vysota,chislo_maha");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:428
+
+使用:cvalues v("vysota,chislo_maha,koeff");
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:429
+
+使用:aaerodin_koeff.add(caerodin_koeff((long)v["vysota"],(double)v["chislo_maha"],(double)v["koeff"]));
+文件名:F:\ASU\Tasks\SubTasks.cpp       行号:435
+
+使用:vw$zakr_tchk.nomer_puska nomer_puska,naim_rt,\
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:200
+
+使用:vw$ob_upr a,vw$ob_upr b,vw$ob_upr c,vw$ob_upr d,vw$ob_upr e,vw$step_bgot,vw$rakety,\
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:205
+
+使用:vw$zakr_tchk,vw$ogn_zad \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:206
+
+使用:a.idos in (select idos from vw$ob_upr where naim_ob#=15023 \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:208
+
+使用:and vw$rakety.idos(+)=a.idos \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:215
+
+使用:and vw$zakr_tchk.idos_isp(+)=a.idos \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:216
+
+使用:and vw$ogn_zad.id_celi(+)=vw$zakr_tchk.id_celi \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:217
+
+使用:and vw$ogn_zad.nomer_puska(+)=vw$zakr_tchk.nomer_puska \
+文件名:F:\ASU\Tasks\TabloVw.cpp       行号:218
+
+使用:,vw$rash_rt.naim_bch#\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:260
+
+使用:,vw$rash_rt.naim_bch\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:261
+
+使用:,vw$rash_rt.kol_bch\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:262
+
+使用:,vw$tochki.nomer\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:263
+
+使用:,vw$zakr_tchk.idos_isp\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:264
+
+使用:,vw$zakr_tchk.naim_isp\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:265
+
+使用:,vw$zakr_tchk.naim_otm#\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:266
+
+使用:,nvl(vw$zakr_tchk.naim_rt#,nvl(vw$rakety_sto.naim_bp#,0)) naim_rt#\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:267
+
+使用:,nvl(vw$zakr_tchk.naim_rt,nvl(vw$rakety_sto.naim_bp,'')) naim_rt\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:268
+
+使用:,decode(vw$ob_upr.naim_ob#,15023,1,0) prizn\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:271
+
+使用:,vw$rash_rt\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:276
+
+使用:,vw$tochki\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:277
+
+使用:,vw$zakr_tchk\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:278
+
+使用:,vw$ob_upr\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:280
+
+使用:,(select * from classif start with id=92500 connect by prior id=master_id) vw$step \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:281
+
+使用:,(select * from vw$rakety where idos in (select idos from vw$ob_upr where naim_ob#=15023)) vw$rakety_sto \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:282
+
+使用:and vw$rash_rt.nomer_puska(+)=vw$ogn_zad.nomer_puska \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:286
+
+使用:and vw$rash_rt.id_celi(+)=vw$ogn_zad.id_celi \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:287
+
+使用:and vw$tochki.nomer_puska(+)=vw$rash_rt.nomer_puska \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:288
+
+使用:and vw$tochki.id_celi(+)=vw$rash_rt.id_celi \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:289
+
+使用:and vw$tochki.naim_bch#(+)=vw$rash_rt.naim_bch# \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:290
+
+使用:and vw$zakr_tchk.nomer_puska(+)=vw$tochki.nomer_puska \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:291
+
+使用:and vw$zakr_tchk.id_celi(+)=vw$tochki.id_celi \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:292
+
+使用:and vw$zakr_tchk.nomer(+)=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:293
+
+使用:and vw$step_bgot.idos(+)=vw$zakr_tchk.idos_isp \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:294
+
+使用:and vw$ob_upr.idos(+)=vw$zakr_tchk.idos_isp \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:295
+
+使用:and vw$rakety_sto.idos(+)=vw$zakr_tchk.idos_isp \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:297
+
+使用:,vw$tochki.nomer\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:300
+
+使用:,vw$rash_rt.naim_bch\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:303
+
+使用:,vw$rash_rt.kol_bch\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:304
+
+使用:,vw$zakr_tchk.naim_isp", cstime,m_nnomer_puska,susl);
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:305
+
+使用:classif \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:931
+
+使用:and classif.id=naim_rt#",(long)v["naim_bch#"]);
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:934
+
+使用:where idos = (select idos from vw$ob_upr where is_my=1) \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1158
+
+使用:and naim_pol# in (select id from classif start with id=210100 connect by prior id=master_id)";
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1159
+
+使用:where idos in (select idos from vw$ob_upr where  naim_ob#=15023 \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1201
+
+使用:vw$tochki.nomer nomer,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1230
+
+使用:vw$tochki.naim_bch# naim_bch#,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1231
+
+使用:get_classif(vw$tochki.naim_bch#) naim_bch,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1232
+
+使用:vw$tochki.koord koord,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1233
+
+使用:vw$zakr_tchk.idos_isp,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1234
+
+使用:vw$tochki,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1242
+
+使用:vw$zakr_tchk,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1243
+
+使用:(select id from classif start with id in (812100,811100) connect by prior id=master_id ) vw$vysoko_tochn \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1250
+
+使用:vw$tochki.id_celi=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1252
+
+使用:and vw$tochki.nomer_puska=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1253
+
+使用:and vw$zakr_tchk.id_celi=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1254
+
+使用:and vw$zakr_tchk.nomer_puska=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1255
+
+使用:and vw$zakr_tchk.nomer=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1256
+
+使用:and vw$rkompl.idos=vw$zakr_tchk.idos_isp \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1257
+
+使用:and har_bch.naim_bch#=vw$tochki.naim_bch# \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1261
+
+使用:vw$tochki.nomer nomer,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1361
+
+使用:vw$tochki.naim_bch# naim_bch#,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1362
+
+使用:get_classif(vw$tochki.naim_bch#) naim_bch,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1363
+
+使用:vw$tochki,\
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1368
+
+使用:vw$tochki.id_celi=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1373
+
+使用:and vw$tochki.nomer_puska=%d \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1374
+
+使用:and vw$vzryv1.id_celi(+)=vw$tochki.id_celi \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1375
+
+使用:and vw$vzryv1.nomer_puska(+)=vw$tochki.nomer_puska \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1376
+
+使用:and vw$vzryv1.nomer(+)=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1377
+
+使用:and vw$vzryv2.id_celi(+)=vw$tochki.id_celi \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1378
+
+使用:and vw$vzryv2.nomer_puska(+)=vw$tochki.nomer_puska \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1379
+
+使用:and vw$vzryv2.nomer(+)=vw$tochki.nomer \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1380
+
+使用:and har_bch.naim_bch#=vw$tochki.naim_bch# \
+文件名:F:\ASU\Tasks\TablUdarovVw.cpp       行号:1381
+
+使用:where har_tech.naim_tech#(+) = vw$bt_ob.naim_bt# and vw$bt_ob.idos in (select idos from vw$ob_upr start with idos = :op_idos_vf connect by prior idos = idos_org) \
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:164
+
+使用:vw$rk_voor.idos in (select idos from vw$ob_upr start with idos = :op_idos_vf connect by prior idos = idos_org)";
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:169
+
+使用:vw$bt_ob.idos in (select idos from vw$ob_upr start with idos = :op_idos_vf connect by prior idos = idos_org)";*/
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:173
+
+使用:(select idos from vw$ob_upr start with idos = :op_idos_vf connect by prior idos = idos_org) \
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:503
+
+使用:(select idos from vw$ob_upr start with idos = :op_idos_vf connect by prior idos = idos_org))";
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:510
+
+使用:strsql = "select dist_mash from norm_manevr nm, vw$ob_upr ob \
+文件名:F:\ASU\Tasks\TechListDlg.cpp       行号:648
+
+使用:"from vw$ob_upr a,vw$ob_upr b,vw$ob_upr c "
+文件名:F:\ASU\Tasks\Zakrep.cpp       行号:129
+
+使用:"for r in (select nomer from vw$zakr_tchk where id_celi="+numbertostring(m_info[i]->nid_celi)+
+文件名:F:\ASU\Tasks\Zakrep.cpp       行号:350
+
+使用:"for r in (select idos_isp from vw$zakr_tchk where id_celi="+numbertostring(m_info[i]->nid_celi)+
+文件名:F:\ASU\Tasks\Zakrep.cpp       行号:355
+
+使用:" and nomer_puska=:nomer_puska and idos_isp not in (select idos from vw$my_ob_upr)) "+
+文件名:F:\ASU\Tasks\Zakrep.cpp       行号:356
+
+使用:long		nkod_rak;				// classifier code of missile
+文件名:F:\ASU\Tasks\Zakrep.h       行号:22
+
+使用:// nvkod_rak - classifier code of missile
+文件名:F:\ASU\Tasks\Zakrep.h       行号:40
+

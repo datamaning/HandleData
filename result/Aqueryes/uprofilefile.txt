@@ -1,0 +1,13 @@
+F:\ASU\UProfile\DlgDoc.cpp
+F:\ASU\UProfile\DlgDoc.h
+F:\ASU\UProfile\DlgObj.cpp
+F:\ASU\UProfile\DlgObj.h
+F:\ASU\UProfile\DlgProfile.cpp
+F:\ASU\UProfile\MyDocTree.cpp
+F:\ASU\UProfile\MyDocTree.h
+F:\ASU\UProfile\MyObjTree.cpp
+F:\ASU\UProfile\MyObjTree.h
+F:\ASU\UProfile\resource.h
+F:\ASU\UProfile\StdAfx.cpp
+F:\ASU\UProfile\StdAfx.h
+F:\ASU\UProfile\UProfile.cpp

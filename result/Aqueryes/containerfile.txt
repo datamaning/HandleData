@@ -1,0 +1,11 @@
+F:\ASU\Container\Container.cpp
+F:\ASU\Container\Container.h
+F:\ASU\Container\DesktopVw.cpp
+F:\ASU\Container\DesktopVw.h
+F:\ASU\Container\MainFrm.cpp
+F:\ASU\Container\MainFrm.h
+F:\ASU\Container\resource.h
+F:\ASU\Container\ShifrDlg.cpp
+F:\ASU\Container\ShifrDlg.h
+F:\ASU\Container\StdAfx.cpp
+F:\ASU\Container\StdAfx.h

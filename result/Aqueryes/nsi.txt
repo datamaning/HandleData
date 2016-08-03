@@ -1,0 +1,1512 @@
+使用:// caerodinkoefdlg dialog for editing table aerodin_koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg.cpp       行号:16
+
+使用:v[0] = m_l_vysota;//value of height above sea level aerodin_koeff.vysota
+文件名:F:\ASU\Nsi\AerodinKoefDlg.cpp       行号:56
+
+使用:v[1] = m_d_mach;//value of mach number aerodin_koeff.chislo_maha
+文件名:F:\ASU\Nsi\AerodinKoefDlg.cpp       行号:57
+
+使用:v[2] = m_d_koeff;//value of profile drag factor aerodin_koeff. koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg.cpp       行号:58
+
+使用://datas write in table aerodin_koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg.h       行号:41
+
+使用:// caerodinkoefdlg dialog for editing table aerodin_koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:28
+
+使用:cstring ssql(" select visota,plotn from har_atm order by visota");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:75
+
+使用:" select visota,skor_zv from har_atm order by visota");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:330
+
+使用:cvalues v("visota,skor_zv");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:331
+
+使用:aspeedsound.add(cspeedsound((long)v["visota"],(double)v["skor_zv"]));
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:336
+
+使用:" select chislo_maha,proizv_koeff from chislo_maha order by chislo_maha");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:381
+
+使用:cvalues v("chislo_maha,proizv_koeff");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:382
+
+使用:achislo_maha.add(cchislo_maha((double)v["chislo_maha"],(double)v["proizv_koeff"]));
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:387
+
+使用://define cx from aerodin_koeff - profile drag factor
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:423
+
+使用:" select vysota,chislo_maha,koeff from aerodin_koeff order by vysota,chislo_maha");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:429
+
+使用:cvalues v("vysota,chislo_maha,koeff");
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:430
+
+使用:aaerodin_koeff.add(caerodin_koeff((long)v["vysota"],(double)v["chislo_maha"],(double)v["koeff"]));
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:435
+
+使用:v[0] = m_l_vysota;//value of height above sea level aerodin_koeff.vysota
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:568
+
+使用:v[1] = m_d_mach;//value of mach number aerodin_koeff.chislo_maha
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:569
+
+使用:v[2] = m_d_koeff;//value of profile drag factor aerodin_koeff. koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.cpp       行号:570
+
+使用://datas write in table aerodin_koeff
+文件名:F:\ASU\Nsi\AerodinKoefDlg_ZAD.h       行号:90
+
+使用:// cbchdlg dialog for editing table har_bch
+文件名:F:\ASU\Nsi\BchDlg.cpp       行号:17
+
+使用:v[0] = m_l_naim_bch;//classify code warhead type.table har_bch.naim_bch#
+文件名:F:\ASU\Nsi\BchDlg.cpp       行号:43
+
+使用:v[1] = m_l_vysota_vskr;//warhead height opening.table har_bch.vysota_vskr
+文件名:F:\ASU\Nsi\BchDlg.cpp       行号:44
+
+使用:v[2] = m_d_fact;//factor conversion in a settlement  ammunition.table har_bch.fact
+文件名:F:\ASU\Nsi\BchDlg.cpp       行号:45
+
+使用:v[4].ovalue::setvalue(m_cs_naim_bch);//warhead type from classif.full_name
+文件名:F:\ASU\Nsi\BchDlg.cpp       行号:47
+
+使用:clongarray m_la;  //array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\BchDlg.h       行号:20
+
+使用://v[0] - classify code warhead type;
+文件名:F:\ASU\Nsi\BchDlg.h       行号:28
+
+使用:long m_l_naim_bch; //classify code warhead type.table har_bch.naim_bch#
+文件名:F:\ASU\Nsi\BchDlg.h       行号:43
+
+使用:cstring m_cs_naim_bch; //warhead type from classif.full_name
+文件名:F:\ASU\Nsi\BchDlg.h       行号:44
+
+使用:long m_l_vysota_vskr; //warhead height opening.table har_bch.vysota_vskr
+文件名:F:\ASU\Nsi\BchDlg.h       行号:47
+
+使用:double m_d_fact; //factor conversion in a settlement  ammunition.table har_bch.fact
+文件名:F:\ASU\Nsi\BchDlg.h       行号:48
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_bch, m_cs_naim_bch);
+文件名:F:\ASU\Nsi\DiapazonDlg.cpp       行号:90
+
+使用:m_sclitera.init( classif_box, m_base, "id=533000", m_l_naim_lit, m_cs_naim_lit);
+文件名:F:\ASU\Nsi\DiapazonDlg.cpp       行号:96
+
+使用://v[0] - classify code warhead name;
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:28
+
+使用://v[3] - classify code warhead letter;
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:31
+
+使用:long m_l_naim_bch;//classify code warhead name. table diapazon.naim_bch#
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:45
+
+使用:cstring m_cs_naim_bch;//warhead name.read from classif.full_name
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:46
+
+使用:cstring m_cs_naim_lit;//warhead letter.read from classif.full_name
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:48
+
+使用:long m_l_naim_lit;//classify code warhead letter.table diapazon.naim_lit#
+文件名:F:\ASU\Nsi\DiapazonDlg.h       行号:49
+
+使用:v[6].ovalue::setvalue(m_cs_naim_tech);//materiel type from classif.full_name
+文件名:F:\ASU\Nsi\GorTechDlg.cpp       行号:87
+
+使用:v[5].ovalue::setvalue(m_cs_naim_gor);//fuel sort from classif.full_name
+文件名:F:\ASU\Nsi\GorTechDlg.cpp       行号:88
+
+使用:m_scname.init(classif_box, m_base, "id=0", m_l_naim_tech, m_cs_naim_tech);
+文件名:F:\ASU\Nsi\GorTechDlg.cpp       行号:109
+
+使用://v[0] - classify code materiel type;
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:28
+
+使用://v[1] - classify code fuel sort;
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:29
+
+使用:long m_l_naim_tech;//classify code materiel type.table gor_tech.naim_tech#
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:47
+
+使用:long m_l_naim_gor;//classify code fuel sort.table gor_tech.naim_gor#
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:48
+
+使用:cstring m_cs_naim_tech;//materiel type.read from classif.full_name
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:52
+
+使用:cstring m_cs_naim_gor;//fuel sort.read from classif.full_name
+文件名:F:\ASU\Nsi\GorTechDlg.h       行号:53
+
+使用:v[2].ovalue::setvalue(m_cs_naim_kol);//name column from classif.full_name
+文件名:F:\ASU\Nsi\HarKolDlg.cpp       行号:54
+
+使用://v[0] - classify code column type;
+文件名:F:\ASU\Nsi\HarKolDlg.h       行号:26
+
+使用:long m_l_naim_kol;//classify code road type.table har_kol.naim_kol#
+文件名:F:\ASU\Nsi\HarKolDlg.h       行号:37
+
+使用:cstring m_cs_naim_kol;//road name.read from classif.full_name
+文件名:F:\ASU\Nsi\HarKolDlg.h       行号:39
+
+使用:// charspudlg dialog for editing table har_spu
+文件名:F:\ASU\Nsi\HarSpuDlg.cpp       行号:17
+
+使用:v[0] = m_l_naim_spu;//har_spu.naim_spu#
+文件名:F:\ASU\Nsi\HarSpuDlg.cpp       行号:59
+
+使用:v[1] = m_d_length;//har_spu.dlina_napr
+文件名:F:\ASU\Nsi\HarSpuDlg.cpp       行号:60
+
+使用:v[2] = m_l_erraiming;//aiming angular error in the direction har_spu.err_pricel
+文件名:F:\ASU\Nsi\HarSpuDlg.cpp       行号:61
+
+使用:v[3] = m_l_errkoord;//har_spu.err_koord
+文件名:F:\ASU\Nsi\HarSpuDlg.cpp       行号:62
+
+使用://v[0] - classify code of missile carrier type;
+文件名:F:\ASU\Nsi\HarSpuDlg.h       行号:29
+
+使用:long m_l_naim_spu;//classify code of launcher truck type.table har_spu.naim_spu#
+文件名:F:\ASU\Nsi\HarSpuDlg.h       行号:42
+
+使用:cstring m_cs_naim_spu;//launcher truck type from classif.full_name
+文件名:F:\ASU\Nsi\HarSpuDlg.h       行号:43
+
+使用:// chartechdlg dialog for editing table har_tech
+文件名:F:\ASU\Nsi\HarTechDlg.cpp       行号:17
+
+使用:v[0] = m_l_naim_tech;//har_tech.naim_tech#
+文件名:F:\ASU\Nsi\HarTechDlg.cpp       行号:55
+
+使用:v[1] = m_d_dlina_tech;//har_tech.dlina
+文件名:F:\ASU\Nsi\HarTechDlg.cpp       行号:56
+
+使用:v[2] = m_l_norm_skor;//har_tech.skor
+文件名:F:\ASU\Nsi\HarTechDlg.cpp       行号:57
+
+使用:v[3].ovalue::setvalue(m_cs_naim_tech);//materiel name from classif.full_name
+文件名:F:\ASU\Nsi\HarTechDlg.cpp       行号:58
+
+使用://v[0] = classify code of materiel name;
+文件名:F:\ASU\Nsi\HarTechDlg.h       行号:27
+
+使用:long m_l_naim_tech;//classify code of materiel type.table har_tech.naim_tech#
+文件名:F:\ASU\Nsi\HarTechDlg.h       行号:40
+
+使用:long m_l_norm_skor;//normative movement speed.table har_tech.skor
+文件名:F:\ASU\Nsi\HarTechDlg.h       行号:41
+
+使用:double m_d_dlina_tech;//materiel length.table har_tech.dlina
+文件名:F:\ASU\Nsi\HarTechDlg.h       行号:42
+
+使用:cstring m_cs_naim_tech;//materiel name.read from classif.full_name
+文件名:F:\ASU\Nsi\HarTechDlg.h       行号:43
+
+使用:v[7].ovalue::setvalue(m_cs_naim_kol);//name column from classif.full_name
+文件名:F:\ASU\Nsi\KolonnyDlg.cpp       行号:75
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_rv, m_cs_naim_rv);
+文件名:F:\ASU\Nsi\KolonnyDlg.cpp       行号:109
+
+使用:m_scname2.init( classif_box, m_base, "id=0", m_l_naim_form, m_cs_naim_form);
+文件名:F:\ASU\Nsi\KolonnyDlg.cpp       行号:112
+
+使用://	m_scname3.init(classif_box, m_base, "id=340000", m_l_naim_kol, m_cs_naim_kol);
+文件名:F:\ASU\Nsi\KolonnyDlg.cpp       行号:115
+
+使用://v[0] - classify code of form name;
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:27
+
+使用://v[1] - classify code of branch
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:28
+
+使用://v[2] - classify code of column name
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:29
+
+使用:long m_l_naim_form;//classify code of force element name.table kolonny.naim_form#
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:44
+
+使用:long m_l_naim_rv;//classify code of branch.table kolonny.naim_rv#
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:45
+
+使用:long m_l_naim_kol;//classify code of type column.table kolonny.naim_kol#
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:46
+
+使用:cstring m_cs_naim_form;//form name from classif.full_name
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:51
+
+使用:cstring m_cs_naim_rv;//branch from classif.full_name
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:52
+
+使用:cstring m_cs_naim_kol;//column name from classif.full_name
+文件名:F:\ASU\Nsi\KolonnyDlg.h       行号:53
+
+使用:// cmachdlg dialog for editing table chislo_maha
+文件名:F:\ASU\Nsi\MachDlg.cpp       行号:17
+
+使用:v[0] = m_d_mach;//height above sea level chislo_maha.chislo_maha
+文件名:F:\ASU\Nsi\MachDlg.cpp       行号:53
+
+使用:v[1] = m_d_proizvkoeff;//sound speed chislo_maha.proizv_koeff
+文件名:F:\ASU\Nsi\MachDlg.cpp       行号:54
+
+使用:"id in (select naim_spu# from har_spu)");
+文件名:F:\ASU\Nsi\NameSpuDlg.cpp       行号:77
+
+使用://		m_scnamestg.init( classif_box, m_base, "id=92000", m_l_naim_stg, m_cs_naim_stg);
+文件名:F:\ASU\Nsi\NameSpuDlg.cpp       行号:80
+
+使用:v[0] = m_l_naim_tech;//classify code of materiel type har_neplan_rem.naim_tech#
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:65
+
+使用:v[1] = m_l_naim_rem;//classify code of type of repair har_neplan_rem.naim_rem#
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:66
+
+使用:v[2] = m_l_naim_res;//classify code of repair realization mode har_neplan_rem.naim_spos#
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:67
+
+使用:v[4].ovalue::setvalue(m_cs_naim_rem); //type of repair from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:69
+
+使用:v[5].ovalue::setvalue(m_cs_naim_res); //repair realization mode from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:70
+
+使用:v[6].ovalue::setvalue(m_cs_naim_tech);//materiel type from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:71
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_tech, m_cs_naim_tech);
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:89
+
+使用:m_scname2.init( classif_box, m_base, "id=360120", m_l_naim_rem, m_cs_naim_rem);
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:92
+
+使用:m_scname3.init( classif_box, m_base, "id=360300", m_l_naim_res, m_cs_naim_res);
+文件名:F:\ASU\Nsi\NePlanRemDlg.cpp       行号:95
+
+使用://v[0] - classify code of materiel type;
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:31
+
+使用://v[1] - classify code of type of repair;
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:32
+
+使用://v[2] - classify code of repair realization mode;
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:33
+
+使用:long m_l_naim_tech;//classify code of materiel type.table har_neplan_rem.naim_tech#
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:48
+
+使用:long m_l_naim_rem;//classify code of  type of repair.table har_neplan_rem.naim_rem#
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:49
+
+使用:long m_l_naim_res;//classify code of repair realization mode.write in har_neplan_rem.naim_spos#
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:50
+
+使用:cstring m_cs_naim_tech;// materiel type.read from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:52
+
+使用:cstring m_cs_naim_rem;//type of repair.read from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:53
+
+使用:cstring m_cs_naim_res;//repair realization mode.read from classif.full_name
+文件名:F:\ASU\Nsi\NePlanRemDlg.h       行号:54
+
+使用:v[0] = m_l_naim_celi;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:75
+
+使用:v[1] = m_l_naim_ukr;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:76
+
+使用:v[2] = m_l_naim_zrk;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:77
+
+使用:v[3] = m_l_naim_pr;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:78
+
+使用:v[4] = m_l_naim_sp;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:79
+
+使用:v[5] = m_l_naim_bch;//classify code
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:80
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_celi, m_cs_naim_celi);
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:108
+
+使用:m_scnameukr.init( classif_box, m_base, "id=81000", m_l_naim_ukr, m_cs_naim_ukr);
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:111
+
+使用:m_scnamezrk.init( classif_box, m_base, "id=82200", m_l_naim_zrk, m_cs_naim_zrk);
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:114
+
+使用:m_scnamepr.init( classif_box, m_base, "id=82100", m_l_naim_pr, m_cs_naim_pr);
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:117
+
+使用:m_scnamesp.init( classif_box, m_base, "id=24000", m_l_naim_sp, m_cs_naim_sp);
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:120
+
+使用:"id in (select naim_bch# from har_bch)");
+文件名:F:\ASU\Nsi\NormBchDlg.cpp       行号:125
+
+使用://v[0] - classify code of target type;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:28
+
+使用://v[1] - classify code of degree of enemy covering;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:29
+
+使用://v[2] - classify code of enemy adms covering type;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:30
+
+使用://v[3] - classify code of sign of suppression of enemy antimissile;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:31
+
+使用://v[4] - classify code of degree of hitting;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:32
+
+使用://v[5] - classify code of warhead type;
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:33
+
+使用:long m_l_naim_celi;//classify code of target type.table norm_bch.celi#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:55
+
+使用:long m_l_naim_ukr;//classify code of degree of enemy covering.table norm_bch.naim_ukr#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:56
+
+使用:long m_l_naim_zrk;//classify code of enemy adms covering type.table norm_bch.naim_zrk#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:57
+
+使用:long m_l_naim_pr;//classify code of sign of suppression of enemy antimissile.write in norm_bch.pr#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:58
+
+使用:long m_l_naim_sp;//classify code of degree of hitting.table norm_bch.naim_sp#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:59
+
+使用:long m_l_naim_bch;//classify code of warhead type.table norm_bch.naim_bch#
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:60
+
+使用:cstring m_cs_naim_celi;//target type.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:61
+
+使用:cstring m_cs_naim_ukr;//degree of enemy covering.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:62
+
+使用:cstring m_cs_naim_zrk;//enemy adms covering type.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:63
+
+使用:cstring m_cs_naim_pr;//sign of suppression of enemy antimissile.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:64
+
+使用:cstring m_cs_naim_sp;//degree of hitting.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:65
+
+使用:cstring m_cs_naim_bch;//warhead type.read from classif.full_name
+文件名:F:\ASU\Nsi\NormBchDlg.h       行号:66
+
+使用:// cnormgotdlg dialog for editing table norm_got
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:17
+
+使用:v[1] = m_l_naim_spu; //classify code of launcher truck norm_got.naim_spu#
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:56
+
+使用:v[2] = m_l_naim_stg; //classify code of readiness norms norm_got.naim_stg#
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:57
+
+使用:v[3] = m_l_time_norm; //long type value of readiness time norm_got.vremya
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:58
+
+使用:v[5].ovalue::setvalue(m_cs_naim_spu); //set name of launcher truck from classif.full_name
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:59
+
+使用:v[4].ovalue::setvalue(m_cs_naim_stg); //set name of readiness norms from classif.full_name
+文件名:F:\ASU\Nsi\NormGotDlg.cpp       行号:60
+
+使用://v[1] - classify code launcher truck type;
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:26
+
+使用://v[2] - classify code readiness norms;
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:27
+
+使用:long m_l_naim_spu;//classify code of launcher truck from norm_got.naim_spu#
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:40
+
+使用:long m_l_naim_stg;//classify code of readiness norms from norm_got.naim_stg#
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:41
+
+使用:long m_l_time_norm;//long type value of readiness time from norm_got.vremya
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:42
+
+使用:cstring m_cs_naim_spu;//name of launcher truck from classif.full_name
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:43
+
+使用:cstring m_cs_naim_stg;//name of readiness norms from classif.full_name
+文件名:F:\ASU\Nsi\NormGotDlg.h       行号:44
+
+使用:m_scname.init( classif_box, m_base, "id=40000", m_l_naim_rv, m_cs_naim_rv);
+文件名:F:\ASU\Nsi\NormManevrDlg.cpp       行号:92
+
+使用:m_scname2.init( classif_box, m_base, "id=10000", m_l_naim_form, m_cs_naim_form);
+文件名:F:\ASU\Nsi\NormManevrDlg.cpp       行号:95
+
+使用://v[0] - classify code of form name;
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:27
+
+使用://v[1] = classify code of branch
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:28
+
+使用:long m_l_naim_form;//classify code of form name.table classif
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:43
+
+使用:long m_l_naim_rv;//classify code of branch. table classif
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:44
+
+使用:cstring m_cs_naim_form;//form name from classif.full_name
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:48
+
+使用:cstring m_cs_naim_rv;//brench from classif.full_name
+文件名:F:\ASU\Nsi\NormManevrDlg.h       行号:49
+
+使用://v[0] - classify code of post name;
+文件名:F:\ASU\Nsi\NormMarshDlg.h       行号:26
+
+使用:long m_l_naim_punkt;//classify code of post name.table norm_marsh.naim_pnt#
+文件名:F:\ASU\Nsi\NormMarshDlg.h       行号:38
+
+使用:cstring m_cs_naim_punkt;//post name from classif.full_name
+文件名:F:\ASU\Nsi\NormMarshDlg.h       行号:40
+
+使用:m_scname.init( classif_box, m_base, "id=10000", m_l_naim_form, m_cs_naim_form);
+文件名:F:\ASU\Nsi\NormObprDlg.cpp       行号:84
+
+使用:m_scnamegos.init( classif_box, m_base, "id=2100", m_l_naim_gos, m_cs_naim_gos);
+文件名:F:\ASU\Nsi\NormObprDlg.cpp       行号:87
+
+使用://v[0] - classify code of force element name;
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:29
+
+使用://v[1] - classify code of state belonging;
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:30
+
+使用:long m_l_naim_form;//classify code of force element name.table norm_obpr.naim_form#
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:44
+
+使用:long m_l_naim_gos;//classify code of state belonging.table norm_obpr.naim_gos#
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:45
+
+使用:cstring m_cs_naim_form;//force element name from classif.full_name
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:46
+
+使用:cstring m_cs_naim_gos;//state belonging from classif.full_name
+文件名:F:\ASU\Nsi\NormObprDlg.h       行号:47
+
+使用:#define define_list_aerodin_koef			cstring("vysota,chislo_maha,koeff")
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:25
+
+使用:#define define_list_aerodin_mach		cstring("chislo_maha,proizv_koeff")
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:27
+
+使用://selection of all data in m_list1 from db(norm_manevr,classif)
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:56
+
+使用:" select vysota,chislo_maha,koeff "
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:60
+
+使用:" from aerodin_koeff");
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:61
+
+使用:m_list1.setitemtext(nitem, 1, csvalue);//chislo_maha
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:71
+
+使用:" select chislo_maha,proizv_koeff"
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:90
+
+使用:" from chislo_maha");
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:91
+
+使用:nitem = m_list2.insertitem(0, csvalue);//chislo_maha
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:101
+
+使用:m_list1.setitemtext(nitem1, 1, csvalue);//chislo_maha
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:171
+
+使用:nitem2 = m_list2.insertitem(0, csvalue);//chislo_maha
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:220
+
+使用:" insert into aerodin_koeff(vysota,chislo_maha,koeff) "
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:249
+
+使用:" values(:vysota,:chislo_maha,:koeff)";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:250
+
+使用:" update aerodin_koeff set koeff=:koeff"
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:253
+
+使用:" where vysota =:vysota and chislo_maha =:chislo_maha";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:254
+
+使用:ssql_delete = " delete from aerodin_koeff where vysota=:vysota and chislo_maha=:chislo_maha";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:256
+
+使用:"insert into chislo_maha (chislo_maha,proizv_koeff)"
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:263
+
+使用:"values(:chislo_maha,:proizv_koeff)";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:264
+
+使用:"update chislo_maha set proizv_koeff=:proizv_koeff "
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:267
+
+使用:"where chislo_maha=:chislo_maha";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:268
+
+使用:"delete from chislo_maha where chislo_maha=:chislo_maha";
+文件名:F:\ASU\Nsi\NsiPPAerodinKoef.cpp       行号:271
+
+使用:int m_ncolumn_path1_rn;
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:120
+
+使用:int m_ncolumn_path2_rn;
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:121
+
+使用:enum norm_got {
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:391
+
+使用:htreeitem getitembytype(norm_got otype);
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:444
+
+使用:cvalues* setdata(norm_got otype, long lnaim, lpctstr slist = null);
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:449
+
+使用:int m_ncolumn_peresch;
+文件名:F:\ASU\Nsi\NsiPPage.h       行号:502
+
+使用:#define define_list_har_bch			cstring("naim_bch#,vysota_vskr,fact,radius")
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:26
+
+使用:#define define_list_ex_har_bch  cstring("naim_bch")
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:27
+
+使用://selection of all data in m_list1 from db(har_bch,classif)
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:59
+
+使用:" select har_bch.*,a.full_name naim_bch "
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:64
+
+使用:" from har_bch,classif a where a.id=naim_bch#");
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:65
+
+使用:cvalues& v = *new cvalues(define_list_har_bch+","+define_list_ex_har_bch);
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:69
+
+使用://selection of  data in m_list2 from db(diapazon,classif)
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:98
+
+使用:" from diapazon,classif a "
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:104
+
+使用:? *new cvalues(define_list_har_bch + "," + define_list_ex_har_bch)
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:144
+
+使用:" insert into har_bch(" + define_list_har_bch + ") "
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:246
+
+使用:" update har_bch set vysota_vskr=:vysota_vskr,fact=:fact,radius=:radius"
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:250
+
+使用:ssql_delete = " delete from har_bch where naim_bch#=:naim_bch#";
+文件名:F:\ASU\Nsi\NsiPPBch.cpp       行号:253
+
+使用:#define define_list_har_atm			cstring("visota,plotn,skor_zv")
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:23
+
+使用:cstring ssql("select * from har_atm");
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:50
+
+使用:cvalues& v = *new cvalues(define_list_har_atm);
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:56
+
+使用:? *new cvalues(define_list_har_atm)
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:86
+
+使用:" insert into har_atm(" + define_list_har_atm + ") "
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:137
+
+使用:" values(:visota,:plotn,:skor_zv)");
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:138
+
+使用:" update har_atm set plotn=:plotn,skor_zv=:skor_zv"
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:141
+
+使用:" delete from har_atm "
+文件名:F:\ASU\Nsi\NsiPPHarAtm.cpp       行号:145
+
+使用:"from har_kol,classif a where a.id=naim_kol#");
+文件名:F:\ASU\Nsi\NsiPPHarKol.cpp       行号:51
+
+使用:#define define_list_har_tech	cstring("naim_tech#,dlina,skor,naim_tech")
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:27
+
+使用://selection of all data in m_list1 from db(har_tech,classif)
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:58
+
+使用:" from har_tech,classif a where a.id=naim_tech#");
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:64
+
+使用:cvalues& v = *new cvalues(define_list_har_tech);
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:68
+
+使用://selection of  data in m_list2 from db(gor_tech,classif)
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:94
+
+使用:" from gor_tech,classif a "
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:100
+
+使用:? *new cvalues(define_list_har_tech)
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:148
+
+使用:" insert into har_tech(naim_tech#,dlina,skor) "
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:255
+
+使用:" update har_tech set naim_tech#=:naim_tech#,dlina=:dlina,skor=:skor"
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:259
+
+使用:ssql_delete = " delete from har_tech where naim_tech#=:naim_tech#";
+文件名:F:\ASU\Nsi\NsiPPHarTech.cpp       行号:262
+
+使用:#define define_list_har_techrv			cstring("naim_tech#,kol_rak,vr_zagr,vr_pzagr,naim_tech")
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:24
+
+使用://	"from har_tech_rv,classif a where a.id=naim_tech#");
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:52
+
+使用:"from har_tech_rv,classif a where a.id=naim_tech#");
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:54
+
+使用:cvalues& v = *new cvalues(define_list_har_techrv);
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:60
+
+使用:? *new cvalues(define_list_har_techrv)
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:93
+
+使用:" insert into har_tech_rv(naim_tech#,kol_rak,vr_zagr,vr_pzagr) "
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:143
+
+使用:" update har_tech_rv set kol_rak=:kol_rak,vr_zagr=:vr_zagr,vr_pzagr=:vr_pzagr "
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:147
+
+使用:" delete from har_tech_rv "
+文件名:F:\ASU\Nsi\NsiPPHarTechRv.cpp       行号:151
+
+使用:static bool m_bgrowth_peresch = true;	//sorting sign in m_list3:true-in ascending order, false - in descending order
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:26
+
+使用:#define define_list_peresch				cstring("naim_celi#,naim_ukr#,naim_zrk#,naim_pr#,"\
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:35
+
+使用://selection of all data in m_list1 from db(har_celi,classif)
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:68
+
+使用:" from har_celi,classif a where a.id=naim_celi#");
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:72
+
+使用://selection of  data in m_list2 from db(norm_bch,classif)
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:95
+
+使用:" from norm_bch,classif a,classif b,classif c,classif d,classif e "
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:103
+
+使用://selection of  data in m_list3 from db(peresch)
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:132
+
+使用:" select peresch.* from peresch "
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:137
+
+使用:cvalues& v = *new cvalues(define_list_peresch + "," + define_list_ex_norm_bch);
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:150
+
+使用:m_list3.sortitems(comparefunc3,m_ncolumn_peresch = 0);
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:161
+
+使用:? *new cvalues(define_list_peresch+","+define_list_ex_norm_bch)
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:272
+
+使用:m_list3.sortitems(comparefunc3,m_ncolumn_peresch);
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:317
+
+使用:"insert into peresch(" + define_list_peresch +
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:370
+
+使用:"update peresch set fact=:fact "
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:375
+
+使用:"delete from peresch where naim_celi#=:naim_celi# and "
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:382
+
+使用:? ( m_bgrowth_peresch?-1:1 )
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:461
+
+使用:: double(va1[index]) == double(va2[index]) ? 0 : ( m_bgrowth_peresch?1:-1 );
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:462
+
+使用:? ( m_bgrowth_peresch?-1:1 )
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:465
+
+使用:: long(va1[index]) == long(va2[index]) ? 0 : ( m_bgrowth_peresch?1:-1 );
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:466
+
+使用:m_bgrowth_peresch = (m_ncolumn_peresch != isubitem) ? true : !m_bgrowth_peresch;
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:635
+
+使用:m_ncolumn_peresch = isubitem;
+文件名:F:\ASU\Nsi\NsiPPNormBch.cpp       行号:637
+
+使用:#define define_list_norm_got		cstring("naim_spu#,naim_spu")
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:22
+
+使用:#define define_list_norm_got_ex		cstring("otype,naim_spu#,naim_stg#,vremya,naim_stg,naim_spu")
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:24
+
+使用:swhere = "id in (select naim_spu# from har_spu) and id not in ("+swhere+")";
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:65
+
+使用:swhere = "id in (select naim_spu# from har_spu)";
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:67
+
+使用:? *new cvalues(define_list_norm_got)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:82
+
+使用:" delete from norm_got where naim_spu#=:naim_spu#";
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:174
+
+使用:" insert into norm_got(naim_spu#,naim_stg#,vremya) "
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:180
+
+使用:" update norm_got set vremya=:vremya "
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:184
+
+使用:" delete from norm_got "
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:188
+
+使用://read launcher track name  in m_list from db(norm_got,classif)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:555
+
+使用:" select distinct naim_spu#,a.full_name naim_spu from norm_got, classif a"
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:559
+
+使用:cvalues& v = *new cvalues(define_list_norm_got );
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:567
+
+使用://read readiness norm in m_tree from db(norm_got,classif)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:580
+
+使用:" from norm_got,classif a "
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:589
+
+使用:norm_got otype;
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:696
+
+使用:cvalues* cnsippnormgot::setdata(norm_got otype, long lnaim, lpctstr slist)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:844
+
+使用:cvalues& v = *new cvalues(define_list_norm_got_ex);
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:848
+
+使用:htreeitem cnsippnormgot::getitembytype(norm_got otype)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:857
+
+使用:if(norm_got(long(v[0]))==otype)
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:865
+
+使用:cvalues& v = *new cvalues(define_list_norm_got);
+文件名:F:\ASU\Nsi\NsiPPNormGot.cpp       行号:886
+
+使用://selection of all data in m_list1 from db(norm_manevr,classif)
+文件名:F:\ASU\Nsi\NsiPPNormManevr.cpp       行号:56
+
+使用:" from norm_manevr,classif a, classif b where a.id=naim_form# and b.id=naim_rv#");
+文件名:F:\ASU\Nsi\NsiPPNormManevr.cpp       行号:62
+
+使用://selection of  data in m_list2 from db(diapazon,classif)
+文件名:F:\ASU\Nsi\NsiPPNormManevr.cpp       行号:96
+
+使用:" from kolonny,classif a "
+文件名:F:\ASU\Nsi\NsiPPNormManevr.cpp       行号:102
+
+使用:"from norm_marsh,classif a where a.id=naim_pnt#");
+文件名:F:\ASU\Nsi\NsiPPNormTimePunkt.cpp       行号:51
+
+使用://selection of all data in m_list1 from db(har_plan_rem,har_neplan_rem,har_to_btv,classif)
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:70
+
+使用:" from har_plan_rem,classif a where a.id=naim_tech#"
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:74
+
+使用:" from har_neplan_rem,classif a where a.id=naim_tech#"
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:77
+
+使用:" from har_to_btv,classif a where a.id=naim_tech#"
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:80
+
+使用://selection of  data in m_list2,m_list3,m_list4 from db(har_plan_rem, har_neplan_rem, har_to_btv, classif)
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:102
+
+使用:" from har_plan_rem,classif a,classif b "
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:112
+
+使用:" from har_neplan_rem,classif a,classif b "
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:151
+
+使用:" from har_to_btv,classif a"
+文件名:F:\ASU\Nsi\NsiPPRemTech.cpp       行号:183
+
+使用://selection of all data in m_list1 from db(norm_manevr,classif)
+文件名:F:\ASU\Nsi\NsiPPRk.cpp       行号:55
+
+使用:" from har_rk,classif a,classif b where a.id=naim_rk# and b.id=naim_spu# ");
+文件名:F:\ASU\Nsi\NsiPPRk.cpp       行号:61
+
+使用://selection of  data in m_list2 from db(diapazon,classif)
+文件名:F:\ASU\Nsi\NsiPPRk.cpp       行号:94
+
+使用:" from technika_rk,classif a,classif b "
+文件名:F:\ASU\Nsi\NsiPPRk.cpp       行号:100
+
+使用:static bool m_bgrowth_path1_rn = true;//sorting sign in m_list3:true-in ascending order, false - in descending order
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:24
+
+使用:static bool m_bgrowth_path2_rn = true;//sorting sign in m_list2:true-in ascending order, false - in descending order
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:25
+
+使用:#define define_list_har_rn			cstring("naim_rn#,sektor,vremya_dvig,rashod_topliva,skor_strui,sechenie")
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:27
+
+使用:#define define_list_ex_har_rn		cstring("naim_rn")
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:28
+
+使用:#define define_list_path1_rn		cstring("naim_rn#,daln,vremya")
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:30
+
+使用:#define define_list_path2_rn		cstring("naim_rn#,index_i,index_j,fact")
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:31
+
+使用://selection of all data in m_list1 from db(har_rn,classif)
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:63
+
+使用:" from har_rn,classif a where a.id=naim_rn#");
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:67
+
+使用:cvalues& v = *new cvalues(define_list_har_rn+","+define_list_ex_har_rn);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:74
+
+使用://selection of  data in m_list2,m_list3 from db(path2_rn, path1_rn, classif)
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:100
+
+使用:ssql2.format("select * from path2_rn where naim_rn#=%ld",
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:106
+
+使用:cvalues& v = *new cvalues(define_list_path2_rn+","+define_list_ex_har_rn);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:111
+
+使用:m_list2.sortitems(comparefunc2,m_ncolumn_path2_rn = 0);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:124
+
+使用:ssql3.format("select * from path1_rn where naim_rn#=%ld",
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:130
+
+使用:cvalues& v = *new cvalues(define_list_path1_rn + "," + define_list_ex_har_rn);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:138
+
+使用:m_list3.sortitems(comparefunc3,m_ncolumn_path1_rn = 0);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:150
+
+使用:? *new cvalues(define_list_har_rn+","+define_list_ex_har_rn)
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:170
+
+使用:? *new cvalues(define_list_path2_rn+","+define_list_ex_har_rn)
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:222
+
+使用:m_list2.sortitems(comparefunc2,m_ncolumn_path2_rn);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:259
+
+使用:? *new cvalues(define_list_path1_rn + "," + define_list_ex_har_rn)
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:269
+
+使用:m_list3.sortitems(comparefunc3,m_ncolumn_path1_rn);
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:306
+
+使用:" insert into har_rn(" + define_list_har_rn + ")"
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:327
+
+使用:" update har_rn set sektor=:sektor,vremya_dvig=:vremya_dvig,rashod_topliva=:rashod_topliva,skor_strui=:skor_strui,sechenie=:sechenie "
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:331
+
+使用:" delete from har_rn where naim_rn#=:naim_rn#";
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:335
+
+使用:" insert into path2_rn(" + define_list_path2_rn +
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:341
+
+使用:" update path2_rn set fact=:fact "
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:345
+
+使用:" delete from path2_rn where naim_rn#=:naim_rn# "
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:349
+
+使用:" insert into path1_rn(" + define_list_path1_rn +
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:356
+
+使用:" update path1_rn set daln=:daln,vremya=:vremya "
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:360
+
+使用:" delete from path1_rn where naim_rn#=:naim_rn# and daln=:daln";
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:364
+
+使用:? ( m_bgrowth_path2_rn?-1:1 )
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:415
+
+使用:: double(va1[index]) == double(va2[index]) ? 0 : ( m_bgrowth_path2_rn?1:-1 );
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:416
+
+使用:? ( m_bgrowth_path2_rn?-1:1 )
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:419
+
+使用:: long(va1[index]) == long(va2[index]) ? 0 : ( m_bgrowth_path2_rn?1:-1 );
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:420
+
+使用:? ( m_bgrowth_path1_rn?-1:1 )
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:431
+
+使用:: long(va1[index]) == long(va2[index]) ? 0 : ( m_bgrowth_path1_rn?1:-1 );
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:432
+
+使用:m_bgrowth_path2_rn = (m_ncolumn_path2_rn != isubitem) ? true : !m_bgrowth_path2_rn;
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:592
+
+使用:m_ncolumn_path2_rn = isubitem;
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:594
+
+使用:m_bgrowth_path1_rn = (m_ncolumn_path1_rn != isubitem) ? true : !m_bgrowth_path1_rn;
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:598
+
+使用:m_ncolumn_path1_rn = isubitem;
+文件名:F:\ASU\Nsi\NsiPPRn.cpp       行号:600
+
+使用:" select har_rt.*,a.full_name naim_rt,b.full_name naim_rn,c.full_name naim_bch "
+文件名:F:\ASU\Nsi\NsiPPRt.cpp       行号:54
+
+使用:" from har_rt,classif a,classif b,classif c "
+文件名:F:\ASU\Nsi\NsiPPRt.cpp       行号:55
+
+使用:" insert into har_rt(naim_rt#,naim_rn#,naim_bch#,"
+文件名:F:\ASU\Nsi\NsiPPRt.cpp       行号:149
+
+使用:" update har_rt set naim_rn#=:naim_rn#,naim_bch#=:naim_bch#,min_daln=:min_daln,"
+文件名:F:\ASU\Nsi\NsiPPRt.cpp       行号:154
+
+使用:cstring ssql_delete("delete from har_rt where naim_rt#=:naim_rt#");
+文件名:F:\ASU\Nsi\NsiPPRt.cpp       行号:159
+
+使用://#define define_list_ex_norm_got	  cstring("naim_spu,naim_stg")
+文件名:F:\ASU\Nsi\NsiPPSkorZvuk.cpp       行号:25
+
+使用:cstring ssql("select * from skor_zv");
+文件名:F:\ASU\Nsi\NsiPPSkorZvuk.cpp       行号:52
+
+使用:" insert into skor_zv(visota,skor) "
+文件名:F:\ASU\Nsi\NsiPPSkorZvuk.cpp       行号:127
+
+使用:" update skor_zv set skor=:skor "
+文件名:F:\ASU\Nsi\NsiPPSkorZvuk.cpp       行号:131
+
+使用:" delete from skor_zv "
+文件名:F:\ASU\Nsi\NsiPPSkorZvuk.cpp       行号:135
+
+使用:#define define_list_har_spu			cstring("naim_spu#,dlina_napr,err_pricel,err_koord")
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:25
+
+使用:#define define_list_ex_har_spu	cstring("naim_spu")
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:26
+
+使用://selection of all data in m_list1 from db(har_spu,classif)
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:59
+
+使用:" select har_spu.*,a.full_name naim_spu "
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:64
+
+使用:" from har_spu,classif a where a.id=naim_spu#");
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:65
+
+使用:cvalues& v = *new cvalues(define_list_har_spu + "," + define_list_ex_har_spu);
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:72
+
+使用://selection of  data in m_list2 from db(spu_rt,classif)
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:94
+
+使用:" from spu_rt,classif a where naim_spu#=%ld and a.id=naim_rt#",
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:100
+
+使用:// adding launcher from classif
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:142
+
+使用:? *new cvalues(define_list_har_spu+","+define_list_ex_har_spu)
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:153
+
+使用:cvalues& v = *new cvalues(define_list_har_spu + "," + define_list_ex_har_spu);
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:259
+
+使用:" insert into har_spu(" + define_list_har_spu + ")"
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:304
+
+使用:"update har_spu set dlina_napr=:dlina_napr,err_pricel=:err_pricel,err_koord=:err_koord "
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:308
+
+使用:" delete from har_spu where naim_spu#=:naim_spu#";
+文件名:F:\ASU\Nsi\NsiPPSpu.cpp       行号:313
+
+使用:" select distinct naim_spu# from norm_got");
+文件名:F:\ASU\Nsi\NsiPSheet.cpp       行号:74
+
+使用:" select  naim_stg# from norm_got"
+文件名:F:\ASU\Nsi\NsiPSheet.cpp       行号:115
+
+使用:ssql3.format(" select full_name  from classif"
+文件名:F:\ASU\Nsi\NsiPSheet.cpp       行号:130
+
+使用:case 5: type = nsi_norm_got;		break;
+文件名:F:\ASU\Nsi\NsiPSheet.cpp       行号:491
+
+使用:case 8: type = nsi_har_tech;		break;
+文件名:F:\ASU\Nsi\NsiPSheet.cpp       行号:494
+
+使用://v[0] - classify code of operations type;
+文件名:F:\ASU\Nsi\OperNormDlg.h       行号:28
+
+使用:long m_l_naim_bd;//classify code of operations type.table oper_norm.naim_bd#
+文件名:F:\ASU\Nsi\OperNormDlg.h       行号:42
+
+使用:cstring m_cs_naim_bd;//operations type from classif.full_name
+文件名:F:\ASU\Nsi\OperNormDlg.h       行号:43
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_rn, m_cs_naim_rn);
+文件名:F:\ASU\Nsi\Path1RnDlg.cpp       行号:80
+
+使用://v[0] - classify code of missile carrier type;
+文件名:F:\ASU\Nsi\Path1RnDlg.h       行号:28
+
+使用:long m_l_naim_rn;//classify code of missile carrier type.table path1_rn.naim_rn#
+文件名:F:\ASU\Nsi\Path1RnDlg.h       行号:41
+
+使用:cstring m_cs_naim_rn;//missile carrier type from classif.full_name
+文件名:F:\ASU\Nsi\Path1RnDlg.h       行号:42
+
+使用:long m_l_daln;//range capability.table path1_rn.daln
+文件名:F:\ASU\Nsi\Path1RnDlg.h       行号:44
+
+使用:long m_l_vremya;//time of flight.table path1_rn.vremya
+文件名:F:\ASU\Nsi\Path1RnDlg.h       行号:45
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_rn, m_cs_naim_rn);
+文件名:F:\ASU\Nsi\Path2RnDlg.cpp       行号:84
+
+使用://v[0] - classify code of missile carrier type;
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:29
+
+使用:long m_l_naim_rn;//classify code of missile carrier type.table path2_rn.naim_rn#
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:45
+
+使用:cstring m_cs_naim_rn;//missile carrier type from classif.full_name
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:47
+
+使用:long m_l_indexi;//indexi.table path2_rn.index_i
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:49
+
+使用:long m_l_indexj;//indexj.table path2_rn.index_j
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:50
+
+使用:double m_d_fact;//factor.table path2_rn.fact
+文件名:F:\ASU\Nsi\Path2RnDlg.h       行号:51
+
+使用:: cdialog("idd_peresch_dlg", pparent),
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:21
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_celi, m_cs_naim_celi);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:112
+
+使用:m_scnameukr.init( classif_box, m_base, "id=0", m_l_naim_ukr, m_cs_naim_ukr);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:115
+
+使用:m_scnamezrk.init( classif_box, m_base, "id=0", m_l_naim_zrk, m_cs_naim_zrk);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:118
+
+使用:m_scnamepr.init( classif_box, m_base, "id=0", m_l_naim_pr, m_cs_naim_pr);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:121
+
+使用:m_scnamesp.init( classif_box, m_base, "id=0", m_l_naim_sp, m_cs_naim_sp);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:124
+
+使用:m_scnamebch.init( classif_box, m_base, "id=0", m_l_naim_bch, m_cs_naim_bch);
+文件名:F:\ASU\Nsi\PereschDlg.cpp       行号:127
+
+使用:#if !defined(afx_pereschdlg_h__90fc44a4_e34a_11d2_8245_006008a07335__included_)
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:1
+
+使用:#define afx_pereschdlg_h__90fc44a4_e34a_11d2_8245_006008a07335__included_
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:2
+
+使用://v[0] - classify code of target type;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:29
+
+使用://v[1] - classify code of degree of enemy covering;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:30
+
+使用://v[2] - classify code of enemy adms covering type;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:31
+
+使用://v[3] - classify code of sign of suppression of enemy antimissile;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:32
+
+使用://v[4] - classify code of degree of hitting;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:33
+
+使用://v[5] - classify code of warhead type;
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:34
+
+使用:long m_l_naim_celi;//classify code of target type.table peresch.naim_celi#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:58
+
+使用:long m_l_naim_ukr;//classify code of degree of enemy covering.table peresch.naim_ukr#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:59
+
+使用:long m_l_naim_zrk;//classify code of enemy adms covering type.table peresch.naim_zrk#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:60
+
+使用:long m_l_naim_pr;//classify code of sign of suppression of enemy antimissile.table peresch.naim_pr#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:61
+
+使用:long m_l_naim_sp;//classify code of degree of hitting.table peresch.naim_sp#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:62
+
+使用:long m_l_naim_bch;//classify code of warhead type.table peresch.naim_bch#
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:63
+
+使用:cstring m_cs_naim_celi;//target type from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:65
+
+使用:cstring m_cs_naim_ukr;//degree of enemy covering from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:66
+
+使用:cstring m_cs_naim_zrk;//enemy adms covering type from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:67
+
+使用:cstring m_cs_naim_pr;//suppression of enemy antimissile from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:68
+
+使用:cstring m_cs_naim_sp;//degree of hitting from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:69
+
+使用:cstring m_cs_naim_bch;//warhead type from classif.full_name
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:70
+
+使用:long m_l_oshibka;//average source intelligence error.table peresch.oshibka
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:72
+
+使用:double m_d_fact;//factor of recalculation of warheads.table peresch.fact
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:73
+
+使用:#endif // !defined(afx_pereschdlg_h__90fc44a4_e34a_11d2_8245_006008a07335__included_)
+文件名:F:\ASU\Nsi\PereschDlg.h       行号:96
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_tech, m_cs_naim_tech);
+文件名:F:\ASU\Nsi\PlanRemDlg.cpp       行号:88
+
+使用:m_scname2.init( classif_box, m_base, "id=360110", m_l_naim_rem, m_cs_naim_rem);
+文件名:F:\ASU\Nsi\PlanRemDlg.cpp       行号:91
+
+使用:m_scname3.init( classif_box, m_base, "id=373000", m_l_naim_res, m_cs_naim_res);
+文件名:F:\ASU\Nsi\PlanRemDlg.cpp       行号:94
+
+使用://v[0] - classify code of materiel type;
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:31
+
+使用://v[1] - classify code of type of repair;
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:32
+
+使用://v[2] - classify code of resource name;
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:33
+
+使用:long m_l_naim_tech;//classify code of materiel type.table har_plan_rem.naim_tech#
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:51
+
+使用:long m_l_naim_rem;//classify code of type of repair.table har_plan_rem.naim_rem#
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:52
+
+使用:long m_l_naim_res;//classify code of resource name.table har_plan_rem.naim_res#
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:53
+
+使用:cstring m_cs_naim_tech;//materiel type from classif.full_name
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:56
+
+使用:cstring m_cs_naim_rem;//type of repair from classif.full_name
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:57
+
+使用:cstring m_cs_naim_res;//resource name from classif.full_name
+文件名:F:\ASU\Nsi\PlanRemDlg.h       行号:58
+
+使用:long m_l_visota;//height above sea.table har_atm.visota
+文件名:F:\ASU\Nsi\PlVozdDlg.h       行号:44
+
+使用:double m_f_plotn;//air denseness.table har_atm.plotn
+文件名:F:\ASU\Nsi\PlVozdDlg.h       行号:45
+
+使用:double m_f_skor;//speed.table har_atm.skor_zv
+文件名:F:\ASU\Nsi\PlVozdDlg.h       行号:46
+
+使用://v[0] - classify code of target type;
+文件名:F:\ASU\Nsi\PriorCeliDlg.h       行号:28
+
+使用:long m_l_naim_celi;//classify code of target type.table har_celi.naim_celi#
+文件名:F:\ASU\Nsi\PriorCeliDlg.h       行号:42
+
+使用:cstring m_cs_naim_celi;//target type from classif.full_name
+文件名:F:\ASU\Nsi\PriorCeliDlg.h       行号:43
+
+使用://v[0] - classify code of force element name;
+文件名:F:\ASU\Nsi\RazvDlg.h       行号:26
+
+使用:long m_l_naim_form;//classify code of force element name.table norm_razv.naim_form#
+文件名:F:\ASU\Nsi\RazvDlg.h       行号:38
+
+使用:cstring m_cs_naim_form;//force element name from classif.full_name
+文件名:F:\ASU\Nsi\RazvDlg.h       行号:42
+
+使用:swhere1 += " id in (select naim_spu# from har_spu)";
+文件名:F:\ASU\Nsi\RkDlg.cpp       行号:123
+
+使用:"id in (select naim_spu# from har_spu)");*/
+文件名:F:\ASU\Nsi\RkDlg.cpp       行号:133
+
+使用:cvaluesarray m_va;  //array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\RkDlg.h       行号:18
+
+使用://v[0] - classify code of missile system type;
+文件名:F:\ASU\Nsi\RkDlg.h       行号:30
+
+使用://v[1] - classify code of launcher truck type;
+文件名:F:\ASU\Nsi\RkDlg.h       行号:31
+
+使用://v[3] - classify code of materiel type;
+文件名:F:\ASU\Nsi\RkDlg.h       行号:32
+
+使用:long m_l_naim_rk;//classify code of missile system type.table har_rk.naim_rk#
+文件名:F:\ASU\Nsi\RkDlg.h       行号:47
+
+使用:long m_l_naim_spu;//classify code of launcher truck type.table har_rk.naim_spu#
+文件名:F:\ASU\Nsi\RkDlg.h       行号:48
+
+使用:cstring m_cs_naim_rk;//missile system type from classif.full_name
+文件名:F:\ASU\Nsi\RkDlg.h       行号:50
+
+使用:cstring m_cs_naim_spu;//launcher truck type from classif.full_name
+文件名:F:\ASU\Nsi\RkDlg.h       行号:51
+
+使用:clongarray m_la;//array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\RnDlg.h       行号:21
+
+使用://v[0] - classify code of missile carrier type;
+文件名:F:\ASU\Nsi\RnDlg.h       行号:30
+
+使用:long m_l_naim_rn;//classify code of missile carrier type.table har_rn.naim_rn#
+文件名:F:\ASU\Nsi\RnDlg.h       行号:44
+
+使用:cstring m_cs_naim_rn;//missile carrier type from classif.full_name
+文件名:F:\ASU\Nsi\RnDlg.h       行号:45
+
+使用:long m_l_sektord;//allowable sector of turn.table har_rn.sektor
+文件名:F:\ASU\Nsi\RnDlg.h       行号:47
+
+使用:long m_l_time;//time of engine-on flight har_rn.vremya_dvig
+文件名:F:\ASU\Nsi\RnDlg.h       行号:48
+
+使用:long m_l_rashod;//fuel expenditure har_rn.rashod_topliva
+文件名:F:\ASU\Nsi\RnDlg.h       行号:49
+
+使用:long m_l_skor;//outflow speed of jet har_rn.skor_strui
+文件名:F:\ASU\Nsi\RnDlg.h       行号:50
+
+使用:double m_d_sechenie;//middle section diameter har_rn.sechenie
+文件名:F:\ASU\Nsi\RnDlg.h       行号:51
+
+使用:"id in (select naim_rn# from har_rn)");
+文件名:F:\ASU\Nsi\RtDlg.cpp       行号:143
+
+使用:"id in (select naim_bch# from har_bch) "+swhere);
+文件名:F:\ASU\Nsi\RtDlg.cpp       行号:171
+
+使用:cvaluesarray m_varray;//array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\RtDlg.h       行号:20
+
+使用://v[0] - classify code of missile type;
+文件名:F:\ASU\Nsi\RtDlg.h       行号:29
+
+使用://v[1] - classify code of missile carrier type;
+文件名:F:\ASU\Nsi\RtDlg.h       行号:30
+
+使用://v[2] - classify code of warhead type;
+文件名:F:\ASU\Nsi\RtDlg.h       行号:31
+
+使用:long m_l_naim_rt;//classify code of missile type.table har_rt.naim_rt#
+文件名:F:\ASU\Nsi\RtDlg.h       行号:58
+
+使用:long m_l_naim_rn;//classify code of missile carrier type.table har_rt.naim_rn#
+文件名:F:\ASU\Nsi\RtDlg.h       行号:59
+
+使用:long m_l_naim_bch;//classify code of warhead type.table har_rt.naim_bch#
+文件名:F:\ASU\Nsi\RtDlg.h       行号:60
+
+使用:cstring m_cs_naim_rt;//missile type from classif.full_name
+文件名:F:\ASU\Nsi\RtDlg.h       行号:61
+
+使用:cstring m_cs_naim_rn;//missile carrier type from classif.full_name
+文件名:F:\ASU\Nsi\RtDlg.h       行号:62
+
+使用:cstring m_cs_naim_bch;//warhead type from classif.full_name
+文件名:F:\ASU\Nsi\RtDlg.h       行号:63
+
+使用:long m_l_max_daln;//maximal range.table har_rt.max_daln
+文件名:F:\ASU\Nsi\RtDlg.h       行号:65
+
+使用:long m_l_min_daln;//minimal range.table har_rt.min_daln
+文件名:F:\ASU\Nsi\RtDlg.h       行号:66
+
+使用:long m_l_max_rast;//maximal range.table har_rt.max_rast
+文件名:F:\ASU\Nsi\RtDlg.h       行号:67
+
+使用:long m_l_min_rast;//minimal range.table har_rt.min_rast
+文件名:F:\ASU\Nsi\RtDlg.h       行号:68
+
+使用:long m_l_smassa;//missile mass start har_rt.massa
+文件名:F:\ASU\Nsi\RtDlg.h       行号:69
+
+使用:long m_l_dmassa;//missile mass delivered har_rt.massa_dost
+文件名:F:\ASU\Nsi\RtDlg.h       行号:70
+
+使用:double m_d_length;//missile length har_rt.dlina
+文件名:F:\ASU\Nsi\RtDlg.h       行号:71
+
+使用:double m_d_vremya;//time constan har_rt.vremya
+文件名:F:\ASU\Nsi\RtDlg.h       行号:72
+
+使用:double m_d_factor;//attenuation factor har_rt.zatuh
+文件名:F:\ASU\Nsi\RtDlg.h       行号:73
+
+使用:long m_l_visota;//height above sea level.table skor_zv.visota
+文件名:F:\ASU\Nsi\SkorZvukDlg.h       行号:43
+
+使用:double m_d_skorzvuk;//sound speed.table skor_zv.skor
+文件名:F:\ASU\Nsi\SkorZvukDlg.h       行号:44
+
+使用:m_scname.init( classif_box, m_base, "id=110720", m_l_naim_spu, m_cs_naim_spu);
+文件名:F:\ASU\Nsi\SpuDlg.cpp       行号:88
+
+使用:swhere+"id in (select naim_rt# from har_rt)");
+文件名:F:\ASU\Nsi\SpuDlg.cpp       行号:104
+
+使用:cvaluesarray m_varray; //array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:19
+
+使用://v[0] - classify code of launcher truck type;
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:28
+
+使用://v[1] - classify code of missile type;
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:29
+
+使用:long m_l_naim_spu;//classify code of launcher truck type.table spu_rt.naim_spu#
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:45
+
+使用:long m_l_naim_rt;//classify code of missile type.table spu_rt.naim_rt#
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:46
+
+使用:cstring m_cs_naim_spu;//launcher truck type from classif.full_name
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:47
+
+使用:cstring m_cs_naim_rt;//missile type from classif.full_name
+文件名:F:\ASU\Nsi\SpuDlg.h       行号:48
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_rk, m_cs_naim_rk);
+文件名:F:\ASU\Nsi\TechRkDlg.cpp       行号:89
+
+使用://	m_scname2.init( classif_box, m_base, "id=121000", m_l_naim_tech, m_cs_naim_tech);
+文件名:F:\ASU\Nsi\TechRkDlg.cpp       行号:92
+
+使用:cvaluesarray m_varray;//array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\TechRkDlg.h       行号:16
+
+使用:long m_l_naim_rk;//classify code warhead name. table diapazon.naim_bch#
+文件名:F:\ASU\Nsi\TechRkDlg.h       行号:36
+
+使用:cstring m_cs_naim_rk;//warhead name.read from classif.full_name
+文件名:F:\ASU\Nsi\TechRkDlg.h       行号:37
+
+使用:long m_l_naim_tech;//classify code warhead name. table diapazon.naim_bch#
+文件名:F:\ASU\Nsi\TechRkDlg.h       行号:38
+
+使用:cstring m_cs_naim_tech;//warhead name.read from classif.full_name
+文件名:F:\ASU\Nsi\TechRkDlg.h       行号:39
+
+使用:swhere += " id in (select naim_tech# from har_tech)";
+文件名:F:\ASU\Nsi\TechRvDlg.cpp       行号:94
+
+使用:cvaluesarray m_varray;//array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:18
+
+使用://v[0] - classify code of materiel type;
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:26
+
+使用:long m_l_naim_tech;//classify code of materiel type.table har_tech_rv.naim_tech#
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:39
+
+使用:long m_l_kol_rak;//amount of loaded rockets.table har_tech_rv.kol_rak
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:40
+
+使用:long m_l_time_norm;//missile loadtime.table har_tech_rv.vr_zagr
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:41
+
+使用:long m_l_time2_norm;//missile transhipment time.table har_tech_rv.vr_pzagr
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:42
+
+使用:cstring m_cs_naim_tech;//materiel type from classif.full_name
+文件名:F:\ASU\Nsi\TechRvDlg.h       行号:43
+
+使用:m_scname.init( classif_box, m_base, "id=0", m_l_naim_tech, m_cs_naim_tech);
+文件名:F:\ASU\Nsi\ToBtvDlg.cpp       行号:87
+
+使用:m_scname2.init( classif_box, m_base, "id=360200", m_l_naim_obsl, m_cs_naim_obsl);
+文件名:F:\ASU\Nsi\ToBtvDlg.cpp       行号:90
+
+使用:cvaluesarray m_varray;//array of classify code for check on uniqueness
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:22
+
+使用://v[0] - classify code of materiel type;
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:31
+
+使用://v[1] = classify code of category maintenance;
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:32
+
+使用:long m_l_naim_tech;//classify code of materiel type.table har_to_btv.naim_tech#
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:47
+
+使用:long m_l_naim_obsl;//classify code of category maintenance.table har_to_btv.naim_obsl#
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:48
+
+使用:cstring m_cs_naim_tech;//materiel type from classif.full_name
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:51
+
+使用:cstring m_cs_naim_obsl;//category maintenance from classif.full_name
+文件名:F:\ASU\Nsi\ToBtvDlg.h       行号:52
+

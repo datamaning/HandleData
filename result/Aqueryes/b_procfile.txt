@@ -1,0 +1,5 @@
+F:\ASU\B_PROC\B_proc.cpp
+F:\ASU\B_PROC\proced.cpp
+F:\ASU\B_PROC\Resource.h
+F:\ASU\B_PROC\StdAfx.cpp
+F:\ASU\B_PROC\StdAfx.h

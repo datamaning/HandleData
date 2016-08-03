@@ -1,0 +1,3 @@
+使用:othrow_dynaset(hthisapp->m_database, dyn, "select idos from vw$my_ob_upr");
+文件名:F:\ASU\UserTasks\MainFrm.cpp       行号:940
+

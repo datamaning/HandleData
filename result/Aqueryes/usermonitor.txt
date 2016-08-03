@@ -1,0 +1,3 @@
+使用:strselect = "select distinct user# r1, naim_user r2, machine r3, logon_time r4 from vw$monitor_usr \
+文件名:F:\ASU\UserMonitor\UserMonitorView.cpp       行号:230
+

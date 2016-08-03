@@ -1,0 +1,17 @@
+F:\ASU\ClassifEdit\ClassifEdit.cpp
+F:\ASU\ClassifEdit\ClassifEdit.h
+F:\ASU\ClassifEdit\ClassifEditDoc.cpp
+F:\ASU\ClassifEdit\ClassifEditDoc.h
+F:\ASU\ClassifEdit\ClassifEditView.cpp
+F:\ASU\ClassifEdit\ClassifEditView.h
+F:\ASU\ClassifEdit\Delete.cpp
+F:\ASU\ClassifEdit\Delete.h
+F:\ASU\ClassifEdit\Find.cpp
+F:\ASU\ClassifEdit\Find.h
+F:\ASU\ClassifEdit\Item.cpp
+F:\ASU\ClassifEdit\Item.h
+F:\ASU\ClassifEdit\MainFrm.cpp
+F:\ASU\ClassifEdit\MainFrm.h
+F:\ASU\ClassifEdit\resource.h
+F:\ASU\ClassifEdit\StdAfx.cpp
+F:\ASU\ClassifEdit\StdAfx.h

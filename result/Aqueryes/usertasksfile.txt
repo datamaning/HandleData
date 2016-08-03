@@ -1,0 +1,13 @@
+F:\ASU\UserTasks\DlgVkl.cpp
+F:\ASU\UserTasks\DlgVkl.h
+F:\ASU\UserTasks\MainFrm.cpp
+F:\ASU\UserTasks\MainFrm.h
+F:\ASU\UserTasks\resource.h
+F:\ASU\UserTasks\StdAfx.cpp
+F:\ASU\UserTasks\StdAfx.h
+F:\ASU\UserTasks\UserTasks.cpp
+F:\ASU\UserTasks\UserTasks.h
+F:\ASU\UserTasks\UserTasksDoc.cpp
+F:\ASU\UserTasks\UserTasksDoc.h
+F:\ASU\UserTasks\UserTasksView.cpp
+F:\ASU\UserTasks\UserTasksView.h

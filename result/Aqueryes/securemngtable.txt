@@ -1,0 +1,12 @@
+表名:asu_roles_doc_privs          出现次数:1
+表名:asu_user_roles          出现次数:2
+表名:asu_all_users          出现次数:2
+表名:asu_roles_roles_privs          出现次数:1
+表名:asu_all_acc          出现次数:4
+表名:asu_all_roles          出现次数:2
+表名:asu_roles_obj_privs          出现次数:1
+表名:asu_user_doc          出现次数:2
+表名:asu_users_obj_privs          出现次数:2
+表名:asu_users_doc_privs          出现次数:2
+表名:asu_user_acc          出现次数:2
+表名:asu_user_obj          出现次数:2

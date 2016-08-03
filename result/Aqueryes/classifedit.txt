@@ -1,0 +1,63 @@
+使用:// classifedit.h : main header file for the classifedit application
+文件名:F:\ASU\ClassifEdit\ClassifEdit.h       行号:1
+
+使用:#if !defined(afx_classifedit_h__a68709f5_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEdit.h       行号:4
+
+使用:#define afx_classifedit_h__a68709f5_e59e_11d2_aa86_00c0df4aa386__included_
+文件名:F:\ASU\ClassifEdit\ClassifEdit.h       行号:5
+
+使用:#endif // !defined(afx_classifedit_h__a68709f5_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEdit.h       行号:53
+
+使用:#if !defined(afx_classifeditdoc_h__a68709fd_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEditDoc.h       行号:5
+
+使用:#define afx_classifeditdoc_h__a68709fd_e59e_11d2_aa86_00c0df4aa386__included_
+文件名:F:\ASU\ClassifEdit\ClassifEditDoc.h       行号:6
+
+使用:#endif // !defined(afx_classifeditdoc_h__a68709fd_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEditDoc.h       行号:61
+
+使用:m_tree.init(m_base,"id","full_name","id,name,full_name","classif","id=master_id","master_id is null",la);
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:216
+
+使用:// argument         : long id - identifier of item in table classif
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:287
+
+使用:cstring ssql="select level,id,name,full_name from classif start with";
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:300
+
+使用:// description	    : search next element in the table classif
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:335
+
+使用:othrow_execute(m_base,"insert into classif(id,master_id,name,full_name) values(:id,:master_id,:name,:full_name)");
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:447
+
+使用:othrow_execute(m_base,"update classif set id=:id,master_id=:master_id,name=:name,full_name=:full_name where id=:old_id");
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:500
+
+使用:othrow_execute(m_base,"update classif set master_id=:master_id where master_id=:id");
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:547
+
+使用:othrow_execute(m_base,"delete from classif where id=:id");
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:559
+
+使用:othrow_execute(m_base,"update classif set master_id=:master_id where id=:id");
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:810
+
+使用:saveclassif(&m_base); // saving classifier
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:940
+
+使用:if(loadclassif(&m_base)) // loading classifier
+文件名:F:\ASU\ClassifEdit\ClassifEditView.cpp       行号:963
+
+使用:#if !defined(afx_classifeditview_h__a68709ff_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEditView.h       行号:5
+
+使用:#define afx_classifeditview_h__a68709ff_e59e_11d2_aa86_00c0df4aa386__included_
+文件名:F:\ASU\ClassifEdit\ClassifEditView.h       行号:6
+
+使用:#endif // !defined(afx_classifeditview_h__a68709ff_e59e_11d2_aa86_00c0df4aa386__included_)
+文件名:F:\ASU\ClassifEdit\ClassifEditView.h       行号:110
+

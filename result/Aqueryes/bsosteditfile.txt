@@ -1,0 +1,7 @@
+F:\ASU\BsostEdit\BsostEdit.cpp
+F:\ASU\BsostEdit\BsostEdit.h
+F:\ASU\BsostEdit\MainFrm.cpp
+F:\ASU\BsostEdit\MainFrm.h
+F:\ASU\BsostEdit\resource.h
+F:\ASU\BsostEdit\StdAfx.cpp
+F:\ASU\BsostEdit\StdAfx.h

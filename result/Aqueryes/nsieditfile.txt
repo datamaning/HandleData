@@ -1,0 +1,7 @@
+F:\ASU\NsiEdit\MainFrm.cpp
+F:\ASU\NsiEdit\MainFrm.h
+F:\ASU\NsiEdit\NsiEdit.cpp
+F:\ASU\NsiEdit\NsiEdit.h
+F:\ASU\NsiEdit\resource.h
+F:\ASU\NsiEdit\StdAfx.cpp
+F:\ASU\NsiEdit\StdAfx.h

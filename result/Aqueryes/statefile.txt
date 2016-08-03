@@ -1,0 +1,15 @@
+F:\ASU\State\list.cpp
+F:\ASU\State\list.h
+F:\ASU\State\MainFrm.cpp
+F:\ASU\State\MainFrm.h
+F:\ASU\State\proba.cpp
+F:\ASU\State\proba.h
+F:\ASU\State\resource.h
+F:\ASU\State\State.cpp
+F:\ASU\State\State.h
+F:\ASU\State\StateDoc.cpp
+F:\ASU\State\StateDoc.h
+F:\ASU\State\StateView.cpp
+F:\ASU\State\StateView.h
+F:\ASU\State\StdAfx.cpp
+F:\ASU\State\StdAfx.h

@@ -1,0 +1,219 @@
+使用://	conservation of classifier
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:206
+
+使用:ar << cstring( "classif" );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:214
+
+使用:str.loadstring(ids_saveclassif);
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:223
+
+使用:dmp.addtable( _t("classif"),
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:230
+
+使用:_t("select * from classif start with master_id is null \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:231
+
+使用:dmp.addtable( _t("har_bch"),   _t("select * from har_bch") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:285
+
+使用:dmp.addtable( _t("diapazon"),  _t("select * from diapazon") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:286
+
+使用:dmp.addtable( _t("har_rn"),    _t("select * from har_rn") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:287
+
+使用:dmp.addtable( _t("path1_rn"),  _t("select * from path1_rn") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:288
+
+使用:dmp.addtable( _t("path2_rn"),  _t("select * from path2_rn") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:289
+
+使用:dmp.addtable( _t("har_rt"),    _t("select * from har_rt") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:290
+
+使用:dmp.addtable( _t("har_spu"),   _t("select * from har_spu") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:291
+
+使用:dmp.addtable( _t("norm_got"),  _t("select * from norm_got") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:292
+
+使用:dmp.addtable( _t("har_rk"),    _t("select * from har_rk") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:293
+
+使用:dmp.addtable( _t("spu_rt"),    _t("select * from spu_rt") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:294
+
+使用:dmp.addtable( _t("har_celi"),  _t("select * from har_celi") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:297
+
+使用:dmp.addtable( _t("norm_bch"),  _t("select * from norm_bch") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:298
+
+使用:dmp.addtable( _t("peresch"),   _t("select * from peresch") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:299
+
+使用:dmp.addtable( _t("har_tech"), _t("select * from har_tech") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:302
+
+使用:dmp.addtable( _t("gor_tech"), _t("select * from gor_tech") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:303
+
+使用:dmp.addtable( _t("har_tech_rv"), _t("select * from har_tech_rv") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:305
+
+使用:dmp.addtable( _t("norm_manevr"), _t("select * from norm_manevr") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:306
+
+使用:dmp.addtable( _t("kolonny"), _t("select * from kolonny") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:307
+
+使用:dmp.addtable( _t("har_kol"), _t("select * from har_kol") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:308
+
+使用:dmp.addtable( _t("norm_marsh"), _t("select * from norm_marsh") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:310
+
+使用:dmp.addtable( _t("har_atm"), _t("select * from har_atm") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:311
+
+使用:dmp.addtable( _t("har_plan_rem"), _t("select * from har_plan_rem") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:312
+
+使用:dmp.addtable( _t("har_neplan_rem"), _t("select * from har_neplan_rem") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:313
+
+使用:dmp.addtable( _t("har_to_btv"), _t("select * from har_to_btv") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:314
+
+使用:dmp.addtable( _t("aerodin_koeff"), _t("select * from aerodin_koeff") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:316
+
+使用:dmp.addtable( _t("chislo_maha"), _t("select * from chislo_maha") );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:317
+
+使用:cstring sql = _t("select * from txn$_in where 1=1");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:399
+
+使用:to_char(max(pack_time), '")+cstime+_t("') from txn$_in where 1=1");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:402
+
+使用:cstring sql = _t("select * from txn$_in_dest \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:590
+
+使用:sql = _t("select * from txn$_data \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:645
+
+使用:from txn$_out t");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:830
+
+使用:to_char(max(pack_time), '")+cstime+_t("') from txn$_out o");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:834
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:840
+
+使用:tsql += _t(", (select txn#, kodob_orig from txn$_out_dest where error_code is ") +
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:842
+
+使用:sql += _t(", (select distinct txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:851
+
+使用:tsql += _t(", (select txn#, kodob_orig from txn$_out_dest where 1=1");
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:852
+
+使用:cstring sql = _t("select * from txn$_out_dest \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1033
+
+使用:sql = _t("select * from txn$_data \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1096
+
+使用://			othrow2(odatabase, edt.open( odatabase, _t("select * from txn$_in")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1402
+
+使用:strsql = _t("insert into txn$_in(txn#, kodob, priority, pack_time, error_time, error_code, error_msg) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1414
+
+使用:strsql = _t("insert into txn$_in_dest(txn#, kodob_orig, kodob_dest) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1551
+
+使用://othrow2(odatabase, edt.open( odatabase, _t("select * from txn$_in_dest")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1554
+
+使用:while( len1-- )	//	txn$_in_dest
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1564
+
+使用:strsql = _t("insert into txn$_data(txn#, kodob, buffer_number, buffer) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1690
+
+使用://othrow2(odatabase, edt.open( odatabase, _t("select * from txn$_data")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1693
+
+使用:while( len1-- )	//	txn$_data
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1704
+
+使用:"insert into txn$_data(txn#,kodob,buffer_number,buffer) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1763
+
+使用:odatabase, "select buffer from txn$_data where rowid=:val_rowid"));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:1766
+
+使用://othrow2(odatabase, edt.open( odatabase, _t("select * from txn$_out")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2073
+
+使用:strsql = _t("insert into txn$_out(txn#, kodob, priority, pack_time) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2085
+
+使用://othrow2(odatabase, edt.open(odatabase, _t("select * from txn$_out_dest")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2204
+
+使用:strsql = _t("insert into txn$_out_dest(txn#, kodob_orig, kodob_dest, error_time, error_code, error_msg) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2213
+
+使用:while( len1-- )	//	txn$_out_dest
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2216
+
+使用://othrow2(odatabase, edt.open(odatabase, _t("select * from txn$_data")));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2373
+
+使用:strsql = _t("insert into txn$_data(txn#, kodob, buffer_number, buffer) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2383
+
+使用:while( len1-- )	//	txn$_data
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2386
+
+使用:"insert into txn$_data(txn#,kodob,buffer_number,buffer) \
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2445
+
+使用:odatabase, "select buffer from txn$_data where rowid=:val_rowid"));
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2448
+
+使用://	loading table classif
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2608
+
+使用:if( str == _t("classif") )
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2653
+
+使用:str.format( ids_classif, time );
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2654
+
+使用:str.loadstring(ids_loadclassif);
+文件名:F:\ASU\DBDump\DBDmp.cpp       行号:2674
+
+使用:int		dbdump_decl	saveclassif( odatabase* pdatabase );			//	classifier saving
+文件名:F:\ASU\DBDump\DBDmp.h       行号:21
+
+使用:int		dbdump_decl	loadclassif( odatabase* pdatabase );			//	load classifier
+文件名:F:\ASU\DBDump\DBDmp.h       行号:29
+
+使用:#define ids_classif                    10003
+文件名:F:\ASU\DBDump\resource.h       行号:8
+
+使用:#define ids_loadclassif                10015
+文件名:F:\ASU\DBDump\resource.h       行号:20
+
+使用:#define ids_saveclassif                10017
+文件名:F:\ASU\DBDump\resource.h       行号:22
+
+使用:#define ids_classifl                   10019
+文件名:F:\ASU\DBDump\resource.h       行号:24
+

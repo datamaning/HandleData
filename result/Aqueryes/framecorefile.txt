@@ -1,0 +1,8 @@
+F:\ASU\FrameCore\Desc.cpp
+F:\ASU\FrameCore\FrameCore.cpp
+F:\ASU\FrameCore\FrameWork.cpp
+F:\ASU\FrameCore\global.cpp
+F:\ASU\FrameCore\OValueEx.cpp
+F:\ASU\FrameCore\StdAfx.cpp
+F:\ASU\FrameCore\StdAfx.h
+F:\ASU\FrameCore\Values.cpp

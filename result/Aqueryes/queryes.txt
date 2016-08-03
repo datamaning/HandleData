@@ -1,0 +1,30 @@
+使用:"select reg_nom,idos from vw$doc where doc_type# in ("+ cslist1 +
+文件名:F:\ASU\Queryes\QueryPPBoevDoc.cpp       行号:114
+
+使用:"select id_celi from vw$celi where naim_celi# in ("+ cslist +")");
+文件名:F:\ASU\Queryes\QueryPPCeli.cpp       行号:98
+
+使用:"select id_celi from vw$celi where " + cswhere);
+文件名:F:\ASU\Queryes\QueryPPCeli.cpp       行号:145
+
+使用:// if activated is radiobutton "plan developer" - to take vw$dvig.idos value
+文件名:F:\ASU\Queryes\QueryPPDvig.cpp       行号:115
+
+使用:"select distinct pl.id_plan,"+::getlabel(plan_disp)+" from vw$dvig pl, vw$kolon k \
+文件名:F:\ASU\Queryes\QueryPPDvig.cpp       行号:122
+
+使用:"select id_ob from vw$ob_mestn where " + cswhere);
+文件名:F:\ASU\Queryes\QueryPPIng.cpp       行号:144
+
+使用:"select id_ob from vw$ob_mestn where sost# in ("+ cslist +")");
+文件名:F:\ASU\Queryes\QueryPPIng.cpp       行号:208
+
+使用:"select nom_tochki from vw$meteo where " + cswhere);
+文件名:F:\ASU\Queryes\QueryPPMeteo.cpp       行号:99
+
+使用:"select nom_tochki from vw$ro_tochki where " + cswhere);
+文件名:F:\ASU\Queryes\QueryPPRo.cpp       行号:100
+
+使用:"select vw$upr_bd_rv.id_com_upr from vw$upr_bd_rv,vw$poluch_com \
+文件名:F:\ASU\Queryes\QueryPPUprBd.cpp       行号:110
+

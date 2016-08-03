@@ -1,0 +1,5 @@
+F:\ASU\Space2\Resource.h
+F:\ASU\Space2\Space2.cpp
+F:\ASU\Space2\SputnikClass.cpp
+F:\ASU\Space2\StdAfx.cpp
+F:\ASU\Space2\StdAfx.h

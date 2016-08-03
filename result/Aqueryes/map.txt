@@ -1,0 +1,132 @@
+使用:szapr.format("select * from vw$points where id_marsh = %d ", id_m);
+文件名:F:\ASU\Map\dPrikladSloi\AddPunkt.cpp       行号:58
+
+使用:cstring ssql = _t("select to_char(ctime, 'hh24:mi:ss') time, koord from gps_data");
+文件名:F:\ASU\Map\dPrikladSloi\dGBD_Buffer.cpp       行号:1207
+
+使用:dword		m_dwid;			// the classification code
+文件名:F:\ASU\Map\dPrikladSloi\dGBD_Buffer.h       行号:341
+
+使用:ssql.format(" select naim_ob#, naim_rv# from vw$ob_upr where idos in "
+文件名:F:\ASU\Map\dPrikladSloi\dPrSloi.cpp       行号:372
+
+使用:" (select idos from vw$gbd_index where unob = %d) ",m_prec->m_dwunob);
+文件名:F:\ASU\Map\dPrikladSloi\dPrSloi.cpp       行号:373
+
+使用:ssql.format(" select kod_znaka, kod_klassa from vw$gbd_zn where unob = %d",
+文件名:F:\ASU\Map\dPrikladSloi\dPrSloi.cpp       行号:404
+
+使用:ssql.format(" select kod_znaka, kod_klassa from vw$gbd_zn where unob = %d",
+文件名:F:\ASU\Map\dPrikladSloi\dPrSloi.cpp       行号:435
+
+使用:/*ssql.format("select unob from vw$gbd_index "
+文件名:F:\ASU\Map\dPrikladSloi\dPrSlSel.cpp       行号:762
+
+使用:"where idos in (select idos from vw$gbd_index where unob = %i) and flag not between 4 and 6",
+文件名:F:\ASU\Map\dPrikladSloi\dPrSlSel.cpp       行号:763
+
+使用:"select ix1.unob from vw$gbd_index ix1, (select idos, acc# from vw$gbd_index where unob = %i) ix2 "
+文件名:F:\ASU\Map\dPrikladSloi\dPrSlSel.cpp       行号:767
+
+使用:case 34: // separating line between classifications
+文件名:F:\ASU\Map\dPrikladSloi\eRisLP.cpp       行号:262
+
+使用:ssql.format("update napr_deistv set rumb = %i", long(ndv*8/pi));
+文件名:F:\ASU\Map\dPrikladSloi\GBD.cpp       行号:41
+
+使用:ssql = "select rumb from napr_deistv ";
+文件名:F:\ASU\Map\dPrikladSloi\GBD.cpp       行号:58
+
+使用:"from vw$gbd_index where unob = %i", unob);
+文件名:F:\ASU\Map\dPrikladSloi\GBD.cpp       行号:88
+
+使用:szapr.format("select * from vw$points where id_marsh = %d ", id_m);
+文件名:F:\ASU\Map\dPrikladSloi\nPereschetUchastkov.cpp       行号:119
+
+使用:szapr.format("select * from vw$uch_dor where id_ob = %d ", id_d);
+文件名:F:\ASU\Map\dPrikladSloi\nPereschetUchastkov.cpp       行号:428
+
+使用:int cmappoint::classify(const cmappoint& p0, const cmappoint& p1) const
+文件名:F:\ASU\Map\Geometry\MapGeometry.cpp       行号:78
+
+使用:switch(pt.classify(a,b))
+文件名:F:\ASU\Map\Geometry\MapGeometry.cpp       行号:896
+
+使用:int classify(const cmappoint& p0, const cmappoint& p1) const;
+文件名:F:\ASU\Map\Geometry\MapGeometry.h       行号:108
+
+使用:szapr.format("select flag from vw$gbd_index where unob = %d", unob);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:86
+
+使用:szapr.format("select idos from vw$gbd_index where unob = %d", unob);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:104
+
+使用:szapr.format("select name from classif where id = %d", id);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:125
+
+使用:szapr.format("select master_id from classif where id = %d", id);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:147
+
+使用:szapr.format("select * from vw$points where id_marsh = %d ", id_m);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:217
+
+使用:szapr.format("select * from vw$points where id_marsh = %d ", id_m);
+文件名:F:\ASU\Map\nTrZadacha\nFileM.cpp       行号:257
+
+使用:bm.loadbitmap(idb_bt_classif);
+文件名:F:\ASU\Map\nTrZadacha\nTreeObUpr.cpp       行号:47
+
+使用:ssql.format(" select  full_name, id from classif where id = %d", mid);
+文件名:F:\ASU\Map\nTrZadacha\nTreeObUpr.cpp       行号:87
+
+使用://ssql.format(" select  naim_ob, idos from vw$ob_upr where idos_org = %d ",idos_org);
+文件名:F:\ASU\Map\nTrZadacha\nTreeObUpr.cpp       行号:89
+
+使用:ssql.format(" select  full_name, id from classif where master_id = %d ", idos_org);
+文件名:F:\ASU\Map\nTrZadacha\nTreeObUpr.cpp       行号:91
+
+使用:#define idb_bt_classif                  5007
+文件名:F:\ASU\Map\nTrZadacha\resource.h       行号:28
+
+使用:"select acc#, is_enable from vw$user_acc where acc# = 10 or acc# = 2");
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1344
+
+使用:ssql.format("select nomob from vw$gbd_index where acc# = %i", nacc);
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1452
+
+使用:ssql.format("select nomob from vw$gbd_index where acc# = %i and id = %i",
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1457
+
+使用:temp = (nacc>20? "select nomob from vw$gbd_index where "
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1462
+
+使用:"select nomob from vw$gbd_index where acc# = %i and idos = %i");
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1464
+
+使用:temp = (nacc>20? "select nomob from vw$gbd_index where "
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1469
+
+使用:"select nomob from vw$gbd_index where acc# = %i and idos = %i and id = %i");
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1471
+
+使用:ssql.format("select unob from vw$gbd_index where idos = %d and flag = 6",target);
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1695
+
+使用:ssql1.format("select unob from vw$gbd_index where idos = %d and acc# = 2",target);
+文件名:F:\ASU\Map\PrSloi\PrSloiView.cpp       行号:1720
+
+使用:"	(select azimut from vw$pol_ob "
+文件名:F:\ASU\Map\PrSloi\ZonaPuska.cpp       行号:59
+
+使用:"  (select idos from vw$gbd_index where unob=%d)) pol, "/* only one position */
+文件名:F:\ASU\Map\PrSloi\ZonaPuska.cpp       行号:61
+
+使用:"	(select naim_bp# from vw$rakety	"
+文件名:F:\ASU\Map\PrSloi\ZonaPuska.cpp       行号:62
+
+使用:"  (select idos from vw$gbd_index where unob=%d)) rak,								"
+文件名:F:\ASU\Map\PrSloi\ZonaPuska.cpp       行号:64
+
+使用:" from har_rt hr, har_rn hrn, classif c "
+文件名:F:\ASU\Map\PrSloi\ZonaPuskaDlg.cpp       行号:93
+

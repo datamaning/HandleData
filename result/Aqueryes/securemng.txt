@@ -1,0 +1,108 @@
+使用:strselect = "select privilege# r1, admin_option r2 from asu_users_doc_privs \
+文件名:F:\ASU\SecureMng\DlgDocAdd.cpp       行号:591
+
+使用:strselect = "select privilege# r1 from asu_user_doc \
+文件名:F:\ASU\SecureMng\DlgDocAdd.cpp       行号:703
+
+使用:strselect = "select privilege# r1, admin_option r2 from asu_roles_doc_privs \
+文件名:F:\ASU\SecureMng\DlgDocAddGr.cpp       行号:592
+
+使用:strselect = "select privilege# r1 from asu_user_doc \
+文件名:F:\ASU\SecureMng\DlgDocAddGr.cpp       行号:704
+
+使用:strselect = "select privilege# r1, admin_option r2 from asu_users_doc_privs \
+文件名:F:\ASU\SecureMng\DlgDocLook.cpp       行号:210
+
+使用:strselect = "select privilege# r1, admin_option r2 from asu_users_obj_privs \
+文件名:F:\ASU\SecureMng\DlgObjAdd.cpp       行号:553
+
+使用:strselect = "select privilege# r1 from asu_user_obj \
+文件名:F:\ASU\SecureMng\DlgObjAdd.cpp       行号:666
+
+使用:strselect = "select privilege# r1, admin_option r2 from asu_roles_obj_privs \
+文件名:F:\ASU\SecureMng\DlgObjAddGr.cpp       行号:551
+
+使用:strselect = "select privilege# r1 from asu_user_obj \
+文件名:F:\ASU\SecureMng\DlgObjAddGr.cpp       行号:663
+
+使用:strselect = "select privilege# r1, admin_option r2 from asu_users_obj_privs \
+文件名:F:\ASU\SecureMng\DlgObjLook.cpp       行号:183
+
+使用:strselect = "select privilege# r1, acc_name r2 from asu_user_acc \
+文件名:F:\ASU\SecureMng\DlgPrivAdd.cpp       行号:139
+
+使用:strselect = "select name r1 from asu_all_acc \
+文件名:F:\ASU\SecureMng\DlgPrivAdd.cpp       行号:195
+
+使用:strselect = "select privilege# r1, acc_name r2 from asu_user_acc \
+文件名:F:\ASU\SecureMng\DlgPrivAddGr.cpp       行号:138
+
+使用:strselect = "select name r1 from asu_all_acc \
+文件名:F:\ASU\SecureMng\DlgPrivAddGr.cpp       行号:194
+
+使用:strselect = "select naim_role r1, role# r2 from asu_user_roles \
+文件名:F:\ASU\SecureMng\DlgPrivProp.cpp       行号:135
+
+使用:strselect.format("select naim_role r1, role# r2 from asu_user_roles \
+文件名:F:\ASU\SecureMng\DlgPrivPropGroup.cpp       行号:136
+
+使用:"select * from asu_all_users order by naim_user#, nomer"));
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:337
+
+使用://---asu_user_roles---------
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:359
+
+使用://--------asu_user_acc-----------
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:369
+
+使用:"select * from asu_all_roles order by naim_role#, nomer"));
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:397
+
+使用://asu_user_roles
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1101
+
+使用://asu_user_acc
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1151
+
+使用:(select distinct acc#, name from asu_all_acc) t2 \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1162
+
+使用://asu_all_roles for current role----------------
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1280
+
+使用:strselect.format("select * from asu_roles_roles_privs where grantee# = %s \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1286
+
+使用:(select distinct acc#, name from asu_all_acc) t2 \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:1339
+
+使用:from asu_roles_roles_privs \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3272
+
+使用:from asu_users_acc_privs t1, asu_all_acc t2 \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3373
+
+使用:strselect = "select name r1 from asu_all_acc \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3380
+
+使用:from asu_roles_acc_privs t1, asu_all_acc t2 \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3543
+
+使用:strselect = "select name r1 from asu_all_acc \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3550
+
+使用:strselect.format("select user# u1, naim_user u2 from asu_all_users \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:3973
+
+使用://---asu_user_roles---------
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:4077
+
+使用://--------asu_user_acc-----------
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:4087
+
+使用:from asu_all_users \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:4283
+
+使用:strselect.format("select role# r1, naim_role r2 from asu_all_roles \
+文件名:F:\ASU\SecureMng\UserTreeRec.cpp       行号:4541
+

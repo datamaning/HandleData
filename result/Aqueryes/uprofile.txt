@@ -1,0 +1,9 @@
+使用:strselect = "select distinct naim_tema# r1, privilege# r2, is_enable r3 from vw$user_doc \
+文件名:F:\ASU\UProfile\DlgDoc.cpp       行号:180
+
+使用:strselect = "select distinct idos r1, kodob r2, privilege# r3, is_enable r4 from vw$user_ob_upr \
+文件名:F:\ASU\UProfile\DlgObj.cpp       行号:182
+
+使用:strselect = "select distinct acc# r1, acc_name r2, privilege# r3, is_enable r4 from vw$user_acc ";
+文件名:F:\ASU\UProfile\DlgProfile.cpp       行号:397
+

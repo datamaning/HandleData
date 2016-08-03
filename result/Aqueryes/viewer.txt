@@ -1,0 +1,324 @@
+使用:"select asu_all_obj.kodob,naim_obj from asu_all_obj,vw$my_ob_upr "
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:97
+
+使用:vw$zakr_tchk a, \
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:173
+
+使用:(select min(nomer) min_nomer from vw$zakr_tchk, vw$my_ob_upr where id_celi=:mc_id_celi and nomer_puska=:mc_nomer_puska and idos_isp=idos) f \
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:178
+
+使用:spu_data_pkg.set_ogn_zad(:mc_id_celi,:mc_nomer_puska,nomer,null);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:196
+
+使用:spu_data_pkg.pol_ob_set(0, 210301, :mc_ctime, :mc_koord, :mc_azimut); \
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:349
+
+使用:spu_data_pkg.stbgot_set(:mc_naim_stbgot#,:mc_ctime,null);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:388
+
+使用:spu_data_pkg.kontr_par_set(:mc_ctime,:mc_daln_geo,:mc_azimut_geo);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:423
+
+使用:spu_data_pkg.otm_isp_set(:mc_vremya_otm,:mc_naim_otm#,:mc_vremya_otm);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:461
+
+使用:spu_data_pkg.stbgot_set(:mc_naim_stbgot#,:mc_ctime,:mc_text);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:515
+
+使用:select text into txt from vw$step_bgot where idos=%ld;\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:516
+
+使用:spu_data_pkg.otm_isp_set(:mc_vremya_otm,950213,:mc_vremya_otm);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:556
+
+使用:spu_data_pkg.otm_isp_set(:mc_vremya_otm,950212,:mc_vremya_otm);\
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:591
+
+使用:not exists ( select timestamp from spec_handl where user#=uid ) or \
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:640
+
+使用:ctime>( select timestamp from spec_handl where user#=uid ) \
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:641
+
+使用:othrow_execute(obase,"begin asu_profile_pkg.spec_handl_set(:mc_ctime);end;");
+文件名:F:\ASU\Viewer\Interaction.cpp       行号:672
+
+使用:"select idos       key1, timestamp from vw$monitor01",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:179
+
+使用:"select id_celi    key1, nomer_puska    key2, timestamp from vw$monitor02",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:180
+
+使用:"select id_marsh   key1, timestamp from vw$monitor03",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:181
+
+使用:"select id_reg     key1, timestamp from vw$monitor04",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:182
+
+使用:"select id_rto     key1, timestamp from vw$monitor06",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:184
+
+使用:"select id_com_upr key1, timestamp from vw$monitor07",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:185
+
+使用:"select idop       key1, timestamp from vw$monitor09",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:187
+
+使用:"select id_celi    key1, timestamp from vw$monitor10",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:188
+
+使用:"select reg_nom    key,  idos key1, timestamp from vw$monitor11",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:189
+
+使用:"select nom_tochki key1, timestamp from vw$monitor12",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:190
+
+使用:"select nom_tochki key1, timestamp from vw$monitor13",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:191
+
+使用:"select nom_zony   key1, naim_zony#     key2, timestamp from vw$monitor14",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:192
+
+使用:"select id_ob      key1, timestamp from vw$monitor15",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:193
+
+使用:"select nom_uch    key1, timestamp from vw$monitor16",
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:194
+
+使用:"", /*select idz			key1, timestamp, type_zad from vw$monitor17*/
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:195
+
+使用:for r in (select alert_name from vw$user_acc where is_enable = 1)\
+文件名:F:\ASU\Viewer\MonitorThread.cpp       行号:260
+
+使用:vw$monitor01 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:48
+
+使用:(select max(timestamp) a from vw$monitor01 ) d,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:51
+
+使用:vw$monitor02 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:66
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:67
+
+使用:(select max(timestamp) a from vw$monitor02 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:68
+
+使用:vw$monitor03 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:83
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:84
+
+使用:(select max(timestamp) a from vw$monitor03 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:85
+
+使用:vw$monitor04 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:98
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:99
+
+使用:(select max(timestamp) a from vw$monitor04 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:100
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:114
+
+使用:vw$monitor06 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:128
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:129
+
+使用:(select max(timestamp) a from vw$monitor06 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:130
+
+使用:vw$monitor07 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:145
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:146
+
+使用:(select max(timestamp) a from vw$monitor07 ) d,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:148
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:163
+
+使用:vw$vzaim_ob vz,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:164
+
+使用:vw$monitor09 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:178
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:179
+
+使用:(select max(timestamp) a from vw$monitor09 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:180
+
+使用:vw$monitor10 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:193
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:194
+
+使用:(select max(timestamp) a from vw$monitor10 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:195
+
+使用:vw$monitor11 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:210
+
+使用:(select max(timestamp) a from vw$monitor11 ) d,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:213
+
+使用:vw$monitor12 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:226
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:227
+
+使用:(select max(timestamp) a from vw$monitor12 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:228
+
+使用:vw$monitor13 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:241
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:242
+
+使用:(select max(timestamp) a from vw$monitor13 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:243
+
+使用:vw$monitor14 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:257
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:258
+
+使用:(select max(timestamp) a from vw$monitor14 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:259
+
+使用:vw$monitor15 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:274
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:275
+
+使用:(select max(timestamp) a from vw$monitor15 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:276
+
+使用:(select 311600 a,id_ob from vw$raion_ogran_ob union\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:278
+
+使用:select 311100 a,id_ob from vw$dorogi_ob union\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:279
+
+使用:select 311200 a,id_ob from vw$fortif_soor_ob union\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:280
+
+使用:select 311500 a,id_ob from vw$most_ob union\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:281
+
+使用:select 311300 a,id_ob from vw$uchastki_fors_ob) e\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:283
+
+使用:vw$monitor16 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:295
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:296
+
+使用:(select max(timestamp) a from vw$monitor16 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:297
+
+使用:vw$monitor17 a,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:311
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:312
+
+使用:(select max(timestamp) a from vw$monitor17 ) c,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:313
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:326
+
+使用:vw$user_acc b,\
+文件名:F:\ASU\Viewer\MonitorView.cpp       行号:340
+
+使用:othrow_dynaset(m_base,dyn,"select rumb from napr_deistv");
+文件名:F:\ASU\Viewer\NdvDlg.cpp       行号:196
+
+使用:delete from napr_deistv;\
+文件名:F:\ASU\Viewer\NdvDlg.cpp       行号:471
+
+使用:insert into napr_deistv(rumb) values(:rumb);\
+文件名:F:\ASU\Viewer\NdvDlg.cpp       行号:472
+
+使用:union select idos from vw$vzaim_ob where kodob=:kodob");
+文件名:F:\ASU\Viewer\ObjectsDlg.cpp       行号:969
+
+使用:union select idos from vw$vzaim_ob where kodob=:kodob");
+文件名:F:\ASU\Viewer\ObjectsDlg.cpp       行号:1068
+
+使用:"select usl_nom from vw$ob_mestn where usl_nom=%ld",m_l_usl_nomer);
+文件名:F:\ASU\Viewer\ObjectsDlg.cpp       行号:1250
+
+使用:othrow_dynaset(m_base,dyn,"select "+sfields+" from spu_data");
+文件名:F:\ASU\Viewer\ObjectsTreeVw.cpp       行号:1186
+
+使用:othrow_dynaset(m_base,dyn,"select koords from vw$per_krai");
+文件名:F:\ASU\Viewer\PerKraiVw.cpp       行号:162
+
+使用:sfrom   = "vw$poluch_com";
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:165
+
+使用:"(select id_celi,nomer_puska,naim_otm#,naim_otm,idos_isp from vw$isp_ognz union "
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:171
+
+使用:"select id_celi,nomer_puska,naim_otm#,naim_otm,idos_isp from vw$zakr_tchk) a";
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:172
+
+使用:sfrom   = "vw$obor_reg";
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:179
+
+使用:sfrom   = "vw$poluch_rto";
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:184
+
+使用:sfrom = "vw$to_plan";
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:189
+
+使用:"idos in (select idos_pol from vw$poluch_com where id_com_upr=%ld)",
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:234
+
+使用:"idos in (select idos_isp from vw$isp_ognz where id_celi=%ld and nomer_puska=%ld) or "
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:240
+
+使用:"idos in (select idos_isp from vw$zakr_tchk where id_celi=%ld and nomer_puska=%ld)",
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:241
+
+使用:"level<3 and (is_my=1 or idos in (select idos from vw$obor_reg where id_reg=%ld))",
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:247
+
+使用:"level<3 and (is_my=1 or idos in (select idos from vw$marsh where id_marsh=%ld))",
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:252
+
+使用:"level<3 and (is_my=1 or idos in (select idos from vw$poluch_rto where id_rto=%ld))",
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:257
+
+使用:"idos in (select idos_isp from vw$to_plan where id_plan=%ld)",long(m_v["id_plan"]));
+文件名:F:\ASU\Viewer\SendDlg.cpp       行号:275
+
+使用:from vw$to_plan \
+文件名:F:\ASU\Viewer\TTORepairView.cpp       行号:672
+
+使用:id_plan vw$to_plan.id_plan%type; \
+文件名:F:\ASU\Viewer\TTORepairView.cpp       行号:760
+
+使用:from vw$to_plan \
+文件名:F:\ASU\Viewer\TTORepairView.cpp       行号:764
+

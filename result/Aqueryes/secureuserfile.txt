@@ -1,0 +1,7 @@
+F:\ASU\SecureUser\resource.h
+F:\ASU\SecureUser\SecureUser.cpp
+F:\ASU\SecureUser\SecureUser.h
+F:\ASU\SecureUser\StdAfx.cpp
+F:\ASU\SecureUser\StdAfx.h
+F:\ASU\SecureUser\UDMainFrm.cpp
+F:\ASU\SecureUser\UDMainFrm.h

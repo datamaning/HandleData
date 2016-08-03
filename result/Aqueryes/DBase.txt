@@ -1,0 +1,78 @@
+使用://	init classifier tree
+文件名:F:\ASU\DBase\ClassifTree.cpp       行号:21
+
+使用:othrow_dynaset(obase,dyn, cstring("select idos from vw$my_ob_upr"));//+::getdbname());
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:291
+
+使用:cstring("select idos_org from vw$ob_upr where is_my=1"));
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:317
+
+使用://	get object name by id from classif
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:338
+
+使用:ssql.format("select full_name from classif where id=%ld",lid);
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:346
+
+使用:ssql.format("select naim_celi from vw$ogn_zad where id_celi=%ld",lid);
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:364
+
+使用:ssql.format("select naim_ob_org, naim_ob# from vw$ob_upr where idos=%ld",lidos);
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:382
+
+使用:ssql.format("select full_name_ob, naim_ob# from vw$vzaim_ob where idos=%ld",lidos);
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:386
+
+使用:othrow_dynaset(obase,dyn,"select naim_regim# from vw$my_ob_upr");
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:435
+
+使用:othrow_dynaset(obase,dyn,"select naim_user from asu_current_user");
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:487
+
+使用:"select nomer,naim_user#,naim_user from asu_current_user");
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:509
+
+使用:"naim_pr#,delta_uvr from vw$ogn_zad where vremya_ik is null) loop "
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:881
+
+使用:ssql = "for r in (select idos,naim_rt# from vw$vydel_bp where idos=:idos) loop "
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:897
+
+使用:if( operation == sql_delete ) ssql = "plan_bpr_pkg1.id_zad_del(:idz,sysdate)";
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:908
+
+使用:ssql = "plan_bpr_pkg1.id_zad_set(sysdate,:naim_zad#,:nom_zad,:idos,:master_idz);\
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:918
+
+使用:select idz into :idz from id_zad\
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:922
+
+使用:if( operation == sql_delete ) ssql = "plan_bpr_pkg1.id_zad_del(:idz,sysdate)";
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:930
+
+使用:"select acc#,is_enable,privilege# from vw$user_acc order by acc#");
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:1057
+
+使用:othrow_dynaset(obase,dyn,"select koord from gps_data");
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:1227
+
+使用:cstring sql; sql.format("select idos from vw$ob_upr where idos_org = %ld",::getmyidos(&obase));
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:1247
+
+使用:cstring cssql(_t("select id from classif where id = :lid start with "));
+文件名:F:\ASU\DBase\DBaseFun.cpp       行号:1260
+
+使用:cswhere += _t("naim_obesp# in (select id from classif start with \
+文件名:F:\ASU\DBase\ObjectsTreeCtrl.cpp       行号:112
+
+使用:cswhere += _t("naim_obesp# in (select id from classif start with \
+文件名:F:\ASU\DBase\ObjectsTreeCtrl.cpp       行号:119
+
+使用:cswhere = "vw$ogn_zad.nomer_puska="+cstring(v["nomer_puska"]);
+文件名:F:\ASU\DBase\ObjectsTreeCtrl.cpp       行号:243
+
+使用:"select idos,privilege#,is_enable from vw$user_ob_upr");
+文件名:F:\ASU\DBase\ObUprTreeCtrl.cpp       行号:26
+
+使用:othrow_dynaset(base,dyn,"select naim_regim# from vw$ob_upr where is_my=1");
+文件名:F:\ASU\DBase\ObUprTreeCtrl.cpp       行号:111
+

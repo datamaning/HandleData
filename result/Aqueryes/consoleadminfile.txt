@@ -1,0 +1,7 @@
+F:\ASU\ConsoleAdmin\ConsoleAdmin.cpp
+F:\ASU\ConsoleAdmin\ConsoleAdmin.h
+F:\ASU\ConsoleAdmin\ConsoleAdminDlg.cpp
+F:\ASU\ConsoleAdmin\ConsoleAdminDlg.h
+F:\ASU\ConsoleAdmin\resource.h
+F:\ASU\ConsoleAdmin\StdAfx.cpp
+F:\ASU\ConsoleAdmin\stdafx.h

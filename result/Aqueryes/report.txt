@@ -1,0 +1,132 @@
+使用:sql.format(_t("select idos from vw$ob_upr where idos=%s"), id);
+文件名:F:\ASU\Report\Execute.cpp       行号:1464
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:1635
+
+使用:sql =	"select idos, nob from vw$ob_upr where " + m_strkey +
+文件名:F:\ASU\Report\Execute.cpp       行号:1675
+
+使用:sql =	"select idos, nob from vw$ob_upr order by nob";
+文件名:F:\ASU\Report\Execute.cpp       行号:1682
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:1846
+
+使用:sql =	_t("select idos, level l from vw$ob_upr where ") + m_strkey +
+文件名:F:\ASU\Report\Execute.cpp       行号:1899
+
+使用:verify( d.open( *pdb, _t("select idos from vw$my_ob_upr") ) == osuccess );
+文件名:F:\ASU\Report\Execute.cpp       行号:1928
+
+使用:if( (long)idos == (long)my )// for own objective of control select all launches from vw$ogn_zad viewer
+文件名:F:\ASU\Report\Execute.cpp       行号:1932
+
+使用:sql = _t("select distinct nomer_puska from vw$ogn_zad order by nomer_puska");
+文件名:F:\ASU\Report\Execute.cpp       行号:1933
+
+使用:sql = _t("select c.full_naim_ob naim from vw$ob_upr c, vw$my_ob_upr ob where c.idos = ob.idos");
+文件名:F:\ASU\Report\Execute.cpp       行号:2102
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:2105
+
+使用:sql =	"select idos from vw$ob_upr where " + m_strkey +
+文件名:F:\ASU\Report\Execute.cpp       行号:2151
+
+使用:sql =	"select idos from vw$ob_upr order by level";
+文件名:F:\ASU\Report\Execute.cpp       行号:2157
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:2319
+
+使用:sqlstr =	cstring("select distinct vw$poluch_com.idos, vw$upr_bd_rv.id_com_upr \
+文件名:F:\ASU\Report\Execute.cpp       行号:2353
+
+使用:from vw$poluch_com, vw$upr_bd_rv \
+文件名:F:\ASU\Report\Execute.cpp       行号:2354
+
+使用:cstring(" vw$poluch_com.id_com_upr (+)= vw$upr_bd_rv.id_com_upr \
+文件名:F:\ASU\Report\Execute.cpp       行号:2356
+
+使用:group by vw$poluch_com.idos, vw$upr_bd_rv.id_com_upr \
+文件名:F:\ASU\Report\Execute.cpp       行号:2357
+
+使用:order by vw$poluch_com.idos, vw$upr_bd_rv.id_com_upr");
+文件名:F:\ASU\Report\Execute.cpp       行号:2358
+
+使用:sqlstr = _t("select max(ctime) t from vw$poluch_com where idos=") +
+文件名:F:\ASU\Report\Execute.cpp       行号:2397
+
+使用:sqlstr = _t("select max(ctime) t from vw$upr_bd_rv where id_com_upr = ") + cstring((const char*)id);
+文件名:F:\ASU\Report\Execute.cpp       行号:2410
+
+使用:sqlstr = _t("select max(ctime) t from vw$param_com where id_com_upr = ") + cstring((const char*)id);
+文件名:F:\ASU\Report\Execute.cpp       行号:2419
+
+使用:idossql	=	_t("select idos from vw$ob_upr start with idos = ") + idos[r] +
+文件名:F:\ASU\Report\Execute.cpp       行号:2567
+
+使用:from vw$rkompl, (select idos from vw$ob_upr start with idos = ") + idos[id] +
+文件名:F:\ASU\Report\Execute.cpp       行号:2587
+
+使用:idossql	=	_t("select idos, level l from vw$ob_upr where ") + m_strkey +
+文件名:F:\ASU\Report\Execute.cpp       行号:2711
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:2820
+
+使用:cstring sql = ( str != _t("0") ? _t("select id_celi, nomer_puska from vw$ogn_zad where nomer_puska = ") + str :
+文件名:F:\ASU\Report\Execute.cpp       行号:2862
+
+使用:_t("select id_celi, nomer_puska from vw$ogn_zad where ") + m_strkey );
+文件名:F:\ASU\Report\Execute.cpp       行号:2863
+
+使用:cstring sql = cstring("select distinct id, ") + id + cstring(" idos from classif cl, ") +
+文件名:F:\ASU\Report\Execute.cpp       行号:3252
+
+使用:cstring("(select id_btv, naim_btv# from vw$tto_btv where idos in ") +
+文件名:F:\ASU\Report\Execute.cpp       行号:3253
+
+使用:cstring("(select idos from vw$ob_upr start with ") + m_strkey +
+文件名:F:\ASU\Report\Execute.cpp       行号:3254
+
+使用:cstring(" sel.naim_btv# in (select id from classif start with ") +
+文件名:F:\ASU\Report\Execute.cpp       行号:3257
+
+使用:sql.format(_t("select idos from vw$ob_upr where idos=%s"), id);
+文件名:F:\ASU\Report\Execute.cpp       行号:3656
+
+使用:cstring sidos = m_ngeneral ?  _t("=:idos") : _t("in (select idos from vw$ob_upr start with idos=:idos connect by prior idos=idos_org)");
+文件名:F:\ASU\Report\Execute.cpp       行号:3697
+
+使用:sql.format("select distinct %s s, %s k, %s t, id, %s idos from vw$tto_btv,\
+文件名:F:\ASU\Report\Execute.cpp       行号:3698
+
+使用:classif c where idos %s and c.id in \
+文件名:F:\ASU\Report\Execute.cpp       行号:3699
+
+使用:(select master_id from classif where id in (select naim_gor# from \
+文件名:F:\ASU\Report\Execute.cpp       行号:3700
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\Execute.cpp       行号:3921
+
+使用:cstring sql = _t("select prizn_inf from vw$my_ob_upr");
+文件名:F:\ASU\Report\ReportDoc.cpp       行号:3252
+
+使用:from vw$ob_upr ob, vw$ob_upr ob1 \
+文件名:F:\ASU\Report\ReportDoc.cpp       行号:3292
+
+使用:#define ids_classif_chapter             36
+文件名:F:\ASU\Report\resource.h       行号:41
+
+使用:#define ids_classif_table               37
+文件名:F:\ASU\Report\resource.h       行号:42
+
+使用:sql.format("select distinct table_name from user_tables");
+文件名:F:\ASU\Report\SelectFieldDialog.cpp       行号:106
+
+使用:sql.format("select distinct view_name from all_views");//user_views");
+文件名:F:\ASU\Report\SelectFieldDialog.cpp       行号:139
+

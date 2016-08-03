@@ -1,0 +1,7 @@
+表名:vw$upr_bd_rv,vw$poluch_com          出现次数:1
+表名:vw$ob_mestn          出现次数:2
+表名:vw$celi          出现次数:2
+表名:vw$doc          出现次数:1
+表名:vw$dvig          出现次数:1
+表名:vw$meteo          出现次数:1
+表名:vw$ro_tochki          出现次数:1

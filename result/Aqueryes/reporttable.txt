@@ -1,0 +1,11 @@
+表名:vw$upr_bd_rv          出现次数:1
+表名:vw$poluch_com          出现次数:1
+表名:vw$tto_btv          出现次数:1
+表名:vw$tto_btv,          出现次数:1
+表名:all_views          出现次数:1
+表名:classif          出现次数:3
+表名:user_tables          出现次数:1
+表名:vw$ogn_zad          出现次数:3
+表名:vw$ob_upr          出现次数:10
+表名:vw$param_com          出现次数:1
+表名:vw$my_ob_upr          出现次数:2
